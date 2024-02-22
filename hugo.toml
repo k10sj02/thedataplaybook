@@ -1,0 +1,4 @@
+baseURL = 'https://k10sj02.github.io/thedataplaybook/'
+languageCode = 'en-us'
+title = 'thedataplaybook'
+theme = 'PaperMod'
