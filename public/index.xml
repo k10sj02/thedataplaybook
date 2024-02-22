@@ -2,17 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>thedataplaybook</title>
+<<<<<<< HEAD
     <link>https://stannomarjones.com/</link>
+=======
+    <link>https://stannomarjones.com/thedataplaybook/</link>
+>>>>>>> 3eec5370c625d98465f97bd35f7dc376fdba7c8a
     <description>Recent content on thedataplaybook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 21 Feb 2024 17:07:23 -0500</lastBuildDate>
+<<<<<<< HEAD
     <atom:link href="https://stannomarjones.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test</title>
       <link>https://stannomarjones.com/docs/test/</link>
       <pubDate>Wed, 21 Feb 2024 17:07:23 -0500</pubDate>
       <guid>https://stannomarjones.com/docs/test/</guid>
+=======
+    <atom:link href="https://stannomarjones.com/thedataplaybook/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test</title>
+      <link>https://stannomarjones.com/thedataplaybook/docs/test/</link>
+      <pubDate>Wed, 21 Feb 2024 17:07:23 -0500</pubDate>
+      <guid>https://stannomarjones.com/thedataplaybook/docs/test/</guid>
+>>>>>>> 3eec5370c625d98465f97bd35f7dc376fdba7c8a
       <description>Introduction This is a test page created with Hugo. You can add your content here using Markdown syntax.
 Section 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Integer vestibulum, purus sit amet dictum sodales, lectus ipsum ultrices justo, nec facilisis odio neque eu justo.
 Subsection Item 1 Item 2 Item 3 Section 2 Sed ullamcorper, libero non feugiat sagittis, nibh massa fermentum ipsum, at condimentum justo tortor et mauris.</description>
