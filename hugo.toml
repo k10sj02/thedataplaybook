@@ -6,7 +6,7 @@ theme = 'PaperMod'
 enableEmoji = true
 
 params:
-  author = 'Stann-Omar Jones'
+  author: Stann-Omar Jones
   homeInfoParams:
     Title = 'the data playbook'
     Content = >
