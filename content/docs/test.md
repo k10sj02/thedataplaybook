@@ -1,8 +1,10 @@
-+++
-title = 'Test'
-date = 2024-02-21T17:07:23-05:00
-draft = false
-+++
+---
+title: "King's County Housing Sales Dashboard"
+date: 2024-02-23T03:44:25-05:00
+draft: false
+tags: ["tableau", "dashboard"]
+categories: ["data visualization"]
+---
 
 # Introduction
 
