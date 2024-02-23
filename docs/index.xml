@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Docs on thedataplaybook</title>
-    <link>https://stannomarjones.com/docs/</link>
-    <description>Recent content in Docs on thedataplaybook</description>
+    <title>Docs on theplaybook</title>
+    <link>http://theplaybook.dev/docs/</link>
+    <description>Recent content in Docs on theplaybook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 23 Feb 2024 03:44:25 -0500</lastBuildDate>
-    <atom:link href="https://stannomarjones.com/docs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://theplaybook.dev/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>King&#39;s County Housing Sales Dashboard</title>
-      <link>https://stannomarjones.com/docs/test-too/</link>
+      <link>http://theplaybook.dev/docs/test-too/</link>
       <pubDate>Fri, 23 Feb 2024 03:44:25 -0500</pubDate>
-      <guid>https://stannomarjones.com/docs/test-too/</guid>
+      <guid>http://theplaybook.dev/docs/test-too/</guid>
       <description>Introduction This is a test page created with Hugo. You can add your content here using Markdown syntax.
 Section 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Integer vestibulum, purus sit amet dictum sodales, lectus ipsum ultrices justo, nec facilisis odio neque eu justo.
 Subsection Item 1 Item 2 Item 3 Section 2 Sed ullamcorper, libero non feugiat sagittis, nibh massa fermentum ipsum, at condimentum justo tortor et mauris.</description>
     </item>
     <item>
       <title>King&#39;s County Housing Sales Dashboard</title>
-      <link>https://stannomarjones.com/docs/test/</link>
+      <link>http://theplaybook.dev/docs/test/</link>
       <pubDate>Fri, 23 Feb 2024 03:44:25 -0500</pubDate>
-      <guid>https://stannomarjones.com/docs/test/</guid>
+      <guid>http://theplaybook.dev/docs/test/</guid>
       <description>Introduction This is a test page created with Hugo. You can add your content here using Markdown syntax.
 Section 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Integer vestibulum, purus sit amet dictum sodales, lectus ipsum ultrices justo, nec facilisis odio neque eu justo.
 Subsection Item 1 Item 2 Item 3 Section 2 Sed ullamcorper, libero non feugiat sagittis, nibh massa fermentum ipsum, at condimentum justo tortor et mauris.</description>
     </item>
     <item>
       <title>Deploying a Blog Powered by Hugo to Github Pages w/ Custom Domain via Github Actions</title>
-      <link>https://stannomarjones.com/docs/test-three/</link>
+      <link>http://theplaybook.dev/docs/test-three/</link>
       <pubDate>Sun, 19 Feb 2023 11:42:25 -0500</pubDate>
-      <guid>https://stannomarjones.com/docs/test-three/</guid>
+      <guid>http://theplaybook.dev/docs/test-three/</guid>
       <description>&lt;p&gt;This post provides a step-by-step guide on how you can create this blog powered by Hugo, configure Github Actions to publish to Github Pages, and link custom domain to your Github Pages.&lt;/p&gt;
 &lt;p&gt;This guide is also available on Youtube &lt;a href=&#34;https://www.youtube.com/watch?v=_QSr2_pxIJs&amp;amp;ab_channel=dhij&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
