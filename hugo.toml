@@ -9,11 +9,11 @@ enableEmoji = true
   author = 'Stann-Omar Jones'
   [[params.homeInfoParams]]
     Title = 'the data playbook'
-    Content = >
+    Content = """
       Welcome to the **data playbook** 🎉
 
       - Welcome to a space dedicated to showcasing my data analysis projects spanning the modern data technology stack, tailored for analysts like yourself.🙂
-
+"""
   [params.socialIcons]
     - name = 'Github'
       url = 'https://github.com/k10sj02'
