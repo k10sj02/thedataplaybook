@@ -15,11 +15,11 @@ enableEmoji = true
       - Welcome to a space dedicated to showcasing my data analysis projects spanning the modern data technology stack, tailored for analysts like yourself.🙂
 """
   [params.socialIcons]
-    - name = 'Github'
+    name = 'Github'
       url = 'https://github.com/k10sj02'
-    - name = 'Linkedin'
+    name = 'Linkedin'
       url = 'https://www.linkedin.com/in/stannomarjones'
-    - name = 'Rss'
+    name = 'Rss'
       url = 'index.xml'
 
   ShowReadingTime = true
