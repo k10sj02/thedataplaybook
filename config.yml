@@ -1,4 +1,4 @@
-baseURL: "http://theplaybook.dev/"
+baseURL: "http://stannomarjones.com"
 languageCode: en-us
 title: theplaybook
 theme: PaperMod
@@ -8,17 +8,17 @@ enableEmoji: true
 params:
   author: Stann-Omar Jones
   homeInfoParams:
-    Title: "the dev playbook"
+    Title: "the data playbook"
     Content: >
-      Welcome to the **dev playbook** 🎉
+      Welcome to the **data playbook** 🎉
 
-      - This is a space where I will mostly be sharing about Go & Kubernetes 🙂
+      - Welcome to a space dedicated to showcasing my data analysis projects spanning the modern data technology stack, tailored for analysts like yourself. 🙂
 
   socialIcons:
     - name: Github
-      url: "https://github.com/dhij"
-    - name: Youtube
-      url: "https://www.youtube.com/@dhij"
+      url: "https://github.com/k10sj02"
+    - name: Linkedin
+      url: "https://www.linkedin.com/in/stannomarjones"
     - name: Rss
       url: "index.xml"
 
