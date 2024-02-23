@@ -1,7 +1,7 @@
-baseURL = 'https://stannomarjones.com'
-languageCode = 'en-us'
-title = 'the data playbook'
-theme = 'PaperMod'
+baseURL: 'https://stannomarjones.com'
+languageCode: 'en-us'
+title: 'the data playbook'
+theme: 'PaperMod'
 
 enableEmoji: true
 
