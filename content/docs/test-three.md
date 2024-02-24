@@ -76,13 +76,13 @@ git push -u origin main
 
 #### Manually Add the gh-pages Branch
 
-![gh-pages branch](/docs/gh-pages-branch.jpg)
+![gh-pages branch](/docs/gh-pages-branch.jpeg)
 
 - Manually add the gh-pages branch to the repository; otherwise the github actions will throw an error
 
 #### Allow Read and Write Permissions on the Workflow
 
-![Github Actions permissions](/docs/actions_permission.jpg)
+![Github Actions permissions](/docs/actions_permission.jpeg)
 
 - Allow read and write permissions under Settings > Actions > General > Workflow permissions
 
@@ -142,13 +142,13 @@ Note: the content will be deployed to `https://<username>.github.io/<repository_
 
 - Purchase your domain from the DNS provider such as [Namecheap](https://www.namecheap.com/) and [GoDaddy](https://www.godaddy.com/)
 
-![Github Pages Custom Domain](/docs/github_pages_custom_domain.jpg#left)
+![Github Pages Custom Domain](/docs/github_pages_custom_domain.jpeg#left)
 
 - Add your custom domain under your Git repository's Settings > Pages > Custom Domain as shown in the image above.
 
 Note: the DNS check will initially be unsuccessful
 
-![Namecheap DNS Records](/docs/namecheap_dns_records.jpg#left)
+![Namecheap DNS Records](/docs/namecheap_dns_records.jpeg#left)
 
 - Configure an apex domain by adding IP addresses for Github Pages as instructed [here](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain). As recommended there, set up a `www` subdomain as well by creating a CNAME record that points to `<username>.github.io`. If you are using Namecheap, you will have records that look something like the image above. The instructions are available [here](https://www.namecheap.com/support/knowledgebase/article.aspx/9645/2208/how-do-i-link-my-domain-to-github-pages/)
 
