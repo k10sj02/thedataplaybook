@@ -34,5 +34,12 @@ Subsection Item 1 Item 2 Item 3 Section 2 Sed ullamcorper, libero non feugiat sa
       <description>&lt;p&gt;This post provides a step-by-step guide on how you can create this blog powered by Hugo, configure Github Actions to publish to Github Pages, and link custom domain to your Github Pages.&lt;/p&gt;
 &lt;p&gt;This guide is also available on Youtube &lt;a href=&#34;https://www.youtube.com/watch?v=_QSr2_pxIJs&amp;amp;ab_channel=dhij&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title></title>
+      <link>http://stannomarjones.com/docs/tableau/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://stannomarjones.com/docs/tableau/</guid>
+      <description> </description>
+    </item>
   </channel>
 </rss>
