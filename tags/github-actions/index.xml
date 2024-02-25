@@ -10,9 +10,9 @@
     <atom:link href="http://stannomarjones.com/tags/github-actions/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deploying a Blog Powered by Hugo to Github Pages w/ Custom Domain via Github Actions</title>
-      <link>http://stannomarjones.com/docs/test-three/</link>
+      <link>http://stannomarjones.com/docs/posts/test-three/</link>
       <pubDate>Sun, 19 Feb 2023 11:42:25 -0500</pubDate>
-      <guid>http://stannomarjones.com/docs/test-three/</guid>
+      <guid>http://stannomarjones.com/docs/posts/test-three/</guid>
       <description>&lt;p&gt;This post provides a step-by-step guide on how you can create this blog powered by Hugo, configure Github Actions to publish to Github Pages, and link custom domain to your Github Pages.&lt;/p&gt;
 &lt;p&gt;This guide is also available on Youtube &lt;a href=&#34;https://www.youtube.com/watch?v=_QSr2_pxIJs&amp;amp;ab_channel=dhij&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
