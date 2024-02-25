@@ -3,7 +3,7 @@ title: "King's County Housing Sales Dashboard"
 date: 2024-02-23T03:44:25-05:00
 draft: false
 tags: ["tableau", "dashboard"]
-categories: ["data visualization"]
+categories: ["blog", "data visualization"]
 ---
 
 
