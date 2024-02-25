@@ -34,13 +34,6 @@ Section 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilis
 Subsection Item 1 Item 2 Item 3 Section 2 Sed ullamcorper, libero non feugiat sagittis, nibh massa fermentum ipsum, at condimentum justo tortor et mauris.</description>
     </item>
     <item>
-      <title>King&#39;s County Housing Sales Dashboard</title>
-      <link>http://stannomarjones.com/docs/tableau/</link>
-      <pubDate>Fri, 23 Feb 2024 03:44:25 -0500</pubDate>
-      <guid>http://stannomarjones.com/docs/tableau/</guid>
-      <description> </description>
-    </item>
-    <item>
       <title>Deploying a Blog Powered by Hugo to Github Pages w/ Custom Domain via Github Actions</title>
       <link>http://stannomarjones.com/docs/posts/test-three/</link>
       <pubDate>Sun, 19 Feb 2023 11:42:25 -0500</pubDate>

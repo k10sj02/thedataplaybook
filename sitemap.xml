@@ -23,9 +23,6 @@
     <loc>http://stannomarjones.com/docs/posts/test/</loc>
     <lastmod>2024-02-23T03:44:25-05:00</lastmod>
   </url><url>
-    <loc>http://stannomarjones.com/docs/tableau/</loc>
-    <lastmod>2024-02-23T03:44:25-05:00</lastmod>
-  </url><url>
     <loc>http://stannomarjones.com/tags/tableau/</loc>
     <lastmod>2024-02-23T03:44:25-05:00</lastmod>
   </url><url>
@@ -50,6 +47,12 @@
     <loc>http://stannomarjones.com/categories/tutorial/</loc>
     <lastmod>2023-02-19T11:42:25-05:00</lastmod>
   </url><url>
+    <loc>http://stannomarjones.com/about/</loc>
+  </url><url>
     <loc>http://stannomarjones.com/archives/</loc>
+  </url><url>
+    <loc>http://stannomarjones.com/search/</loc>
+  </url><url>
+    <loc>http://stannomarjones.com/terms/</loc>
   </url>
 </urlset>
