@@ -8,7 +8,7 @@ enableEmoji: true
 params:
   author: Stann-Omar Jones
   homeInfoParams:
-    Title: "the data playbook"
+    Title: "Stann-Omar Jones"
     Content: >
       Welcome to the **data playbook** 🎉
 
@@ -24,22 +24,27 @@ params:
 
   ShowReadingTime: true
   ShowShareButtons: true
+  ShareButtons: ["twitter", "linkedin", "facebook", "whatsapp", "telegram"]
 
 menu:
   main:
     - identifier: about
-      name: About
+      name: about
       url: /about/
       weight: 10
-    - identifier: categories
-      name: Categories
-      url: /categories/
+    - identifier: blog
+      name: blog
+      url: /post/
       weight: 20
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 30
     - identifier: archives
-      name: Archives
+      name: archives
       url: /archives/
+      weight: 30
+    - identifier: projects
+      name: projects
+      url: /projects/
       weight: 40
+    - identifier: search
+      name: search
+      url: /search/
+      weight: 50
