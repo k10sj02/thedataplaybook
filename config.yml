@@ -34,7 +34,7 @@ menu:
       weight: 10
     - identifier: blog
       name: blog
-      url: /post/
+      url: /posts/
       weight: 20
     - identifier: archives
       name: archives
