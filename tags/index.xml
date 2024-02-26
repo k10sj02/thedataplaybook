@@ -22,26 +22,5 @@
       <guid>http://stannomarjones.com/tags/tableau/</guid>
       <description></description>
     </item>
-    <item>
-      <title>Github Actions</title>
-      <link>http://stannomarjones.com/tags/github-actions/</link>
-      <pubDate>Sun, 19 Feb 2023 11:42:25 -0500</pubDate>
-      <guid>http://stannomarjones.com/tags/github-actions/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Github Pages</title>
-      <link>http://stannomarjones.com/tags/github-pages/</link>
-      <pubDate>Sun, 19 Feb 2023 11:42:25 -0500</pubDate>
-      <guid>http://stannomarjones.com/tags/github-pages/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Hugo</title>
-      <link>http://stannomarjones.com/tags/hugo/</link>
-      <pubDate>Sun, 19 Feb 2023 11:42:25 -0500</pubDate>
-      <guid>http://stannomarjones.com/tags/hugo/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>
