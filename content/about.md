@@ -2,7 +2,7 @@
 title: "About" # in any language you want
 layout: "about" # is necessary
 # url: "/archive"
-#description: "who is the author of the blog devmedeiros"
+#description: "who is the author of the blog k10sj02"
 summary: "Jaqueline Medeiros, Analytical Engineer passionate about Data Science. In her blog she mixes the technical with the accessible, offering content about programming and discoveries for readers of different skill levels."
 showtoc: false
 showReadingTime: false
