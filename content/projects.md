@@ -30,7 +30,7 @@ The following are a few projects that I have worked on in my free time. They are
 
 **Skills:** ETL (Extract, Transform, Load), Data warehousing, Data cleaning and transformation, Exploratory data analysis (EDA), SQL, Data visualization 
 
-{{< github-repo user="devmedeiros" repo="covid-tracking-project-sql" >}}
+{{< github-repo user="k10sj02" repo="covid-tracking-project-sql" >}}
 
 ---
 
