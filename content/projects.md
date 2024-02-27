@@ -44,24 +44,30 @@ The following are a few projects that I have worked on in my free time. They are
 
 ---
 
-## Alura 1st Data Science Challenge
+## 8 Week SQL Challenge: Mastering PostgreSQL with Docker
 
-**Description:** This project presents my take on the first Alura Data Science Challenge. I was challenged to clean a dataset and predict the churn rate from imbalanced data.
+**Project:** Completed the 8 Week SQL Challenge (Data with Danny) using PostgreSQL and Docker. Analyzed and cleaned eight diverse datasets, including banking and sales, utilizing various SQL techniques like window functions and Common Table Expressions (CTEs).
 
-**Stacks:** Python _(pandas, seaborn, matplotlib, numpy, and sklearn)_
+**Stacks:** PostgreSQL, Docker
 
-**Skils:** Machine Learning, Data Cleaning, Imbalanced Data, and Data Visualization
+**Skills:** Data analysis with SQL, Data cleaning and manipulation, Window functions, Common Table Expressions (CTEs), Containerization
 
-{{< github-repo user="devmedeiros" repo="Challenge-Data-Science" >}}
+{{< github-repo user="k10sj02" repo="serious-sql" >}}
 
 ---
 
-## Alura 2nd BI Challenge
+## Real Estate Analytics: King County Housing Sales Dashboard
 
-**Description:** This project presents my take on the second Alura BI Challenge. It consisted of making three Power BI interactive reports. Each presented its challenge.
+**Description:** Developed an interactive dashboard for analyzing King County housing sales. 
+
+**Stacks:** Tableau
+
+**Skills:** Data Visualization, Dashboard design, Interactive development, Data analysis
+
+The dashboard features:
 
 **Stacks:** Power BI
 
-**Skils:** Data Visualization
+---
 
-{{< github-repo user="devmedeiros" repo="Alura-Challenge-BI-2" >}}
+
