@@ -58,15 +58,11 @@ The following are a few projects that I have worked on in my free time. They are
 
 ## Real Estate Analytics: King County Housing Sales Dashboard
 
-**Description:** Developed an interactive dashboard for analyzing King County housing sales. 
+**Description:** Developed an interactive dashboard for analyzing King County housing sales. Includes line chart for trends, histograms for distribution analysis, map for geographical patterns, heatmap for multi-dimensional insights. 
 
 **Stacks:** Tableau
 
 **Skills:** Data Visualization, Dashboard design, Interactive development, Data analysis
-
-The dashboard features:
-
-**Stacks:** Power BI
 
 ---
 
