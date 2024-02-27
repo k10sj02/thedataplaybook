@@ -3,22 +3,22 @@ title: "About" # in any language you want
 layout: "about" # is necessary
 # url: "/archive"
 #description: "who is the author of the blog k10sj02"
-summary: "Jaqueline Medeiros, Analytical Engineer passionate about Data Science. In her blog she mixes the technical with the accessible, offering content about programming and discoveries for readers of different skill levels."
+summary: "Stann-Omar Jones, a Data Analyst fueled by a background in strategic finance and politics, uses data to uncover valuable insights. His inclusive blog blends technical topics with accessible explanations, making programming and data discoveries approachable for all."
 showtoc: false
 showReadingTime: false
 noComment: true
 disableShare: true
 ---
 
-Hi! My name is Jaqueline Medeiros and I'm an Analytics Engineer from Brazil. {{< round-image "https://avatars.githubusercontent.com/u/33239902?v=4" "jaqueline medeiros analytics engineer">}} I've always liked learning new things and exploring new possibilities and this blog is an outlet for me to create and discover new things related to Data Science. 
+Hi! My name is Stann-Omar Jones and I'm a data analyst. {{< round-image "https://avatars.githubusercontent.com/u/33239902?v=4" "stann-omar jones data analyst">}} 
+This blog is my playground for exploring and sharing discoveries in the ever-evolving world of data science. 
 
-I want to write posts that people can read without a technical background, but I also want to showcase and talk about the coding aspects of what I'm currently learning, so you'll be able to find a little bit of everything here.
+My writing aims to be accessible to everyone, regardless of technical background. I'll explain coding concepts alongside real-world applications, making them engaging and understandable.
 
 You can find me at:
 
- {{< icon "linkedin" >}} [medeiros-jaqueline](https://www.linkedin.com/in/medeiros-jaqueline/)  
- {{< icon "github" >}} [devmedeiros](https://github.com/devmedeiros)  
- {{< icon "file-text" >}} [résumé](https://devmedeiros.com/resume/)
+ {{< icon "linkedin" >}} [stannomarjones](https://www.linkedin.com/in/stannomarjones/)  
+ {{< icon "github" >}} [k10sj02](https://github.com/k10sj02)  
 
 ---
 ### Disclaimer
