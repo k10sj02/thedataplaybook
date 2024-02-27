@@ -1,7 +1,7 @@
 ---
 title: "Projects" # in any language you want
 layout: "single" # is necessary
-summary: "Explore my personal projects on GitHub, including a credit score classification app, Nota Fiscal Goiana, and Alura's Business Intelligence challenge."
+summary: "Explore my personal projects on GitHub, including various SQL, Tableau and Python challenges."
 showtoc: true
 showReadingTime: false
 noComment: true
@@ -10,15 +10,15 @@ noLike: true
 
 The following are a few projects that I have worked on in my free time. They are in no particular order.
 
-## Nota Fiscal Goiana
+## SQL Web Analytics - Unveiling Trends & Strategies in Political Advocacy
 
-**Description:** This project presents a complete solution to ETL the data from Nota Fiscal Goiana. It also presents the curated data in a Power BI dashboard.
+**Description:**  Utilized SQLite to delve deeper into user behavior, device segmentation, and referral sources through extensive exploratory data analysis. Implemented joins, window functions, and comparison operators to extract actionable insights that informed strategic decisions.
 
-**Stacks:** Python, Power BI, SQL, and Github Actions
+**Stacks:** SQLite, Tableau
 
-**Skills:** ETL, Data Visualization, and Scraping
+**Skills:** Exploratory data analysis, SQL querying with joins, window functions, and comparison operators
 
-{{< github-repo user="devmedeiros" repo="nota-fiscal-goiana" >}}
+{{< github-repo user="k10sj02" repo="web-analytics-sql" >}}
 
 ---
 
