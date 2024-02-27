@@ -40,7 +40,7 @@ The following are a few projects that I have worked on in my free time. They are
 
 **Stacks:** HTML/CSS, Hugo, Papermod theme, and Github Actions
 
-{{< github-repo user="devmedeiros" repo="thedataplaybook.github.io" >}}
+{{< github-repo user="k10sj02" repo="thedataplaybook" >}}
 
 ---
 
@@ -70,4 +70,24 @@ The dashboard features:
 
 ---
 
+## Predicting Gender Self-Perception: An Analysis of American Masculinity
 
+**Description:** Preprocessed a national US survey dataset on masculinity, focusing on data loading, mapping, cleaning, and exploration. Applied predictive analytics, including regression analysis, random forests, and XGBoost, to predict the gender self-perception of survey respondents. Employed advanced machine learning techniques, such as feature engineering and hyperparameter tuning, to optimize model performance.
+
+**Stacks:** Python _(pandas, matplotlib, scikit-learn, geopandas)_
+
+**Skills:** Data preprocessing, Data cleaning, Exploratory data analysis, Predictive modeling, Machine learning, Feature engineering, Hyperparameter tuning, Geospatial analysis
+
+{{< github-repo user="k10sj02" repo="us_views_of_masculinity" >}}
+
+---
+
+## British Columbia Labor Market Research
+
+**Description:** Processed CSV datasets containing Canadian provincial labor market statistics through import, cleaning, and merging. Created visualizations focusing on monthly employment changes across Canadian provinces, highlighting sectors like accommodation, food services, and retail trade.
+
+**Stacks:** R _(tidyverse, dplyr, lubridate)_
+
+**Skills:** Data wrangling, Data cleaning and merging, Data visualization, Economic analysis
+
+{{< github-repo user="k10sj02" repo="BC_Labor_Statistics_Exploration" >}}
