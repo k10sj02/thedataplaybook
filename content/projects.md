@@ -10,7 +10,7 @@ noLike: true
 
 The following are a few projects that I have worked on in my free time. They are in no particular order.
 
-## SQL Web Analytics - Unveiling Trends & Strategies in Political Advocacy
+## SQL Web Analytics for Political Advocacy
 
 **Description:**  Utilized SQLite to delve deeper into user behavior, device segmentation, and referral sources through extensive exploratory data analysis. Implemented joins, window functions, and comparison operators to extract actionable insights that informed strategic decisions.
 
@@ -22,25 +22,25 @@ The following are a few projects that I have worked on in my free time. They are
 
 ---
 
-## Credit Score Classification App
+## Global COVID-19 Trend Analysis
 
-**Description:** This project cleans a credit score dataset, and builds and serializes a machine learning model. This ML model is used on a Streamlit app where you can enter fictional data and get a credit score classification.
+**Description:** Built an ETL pipeline using MySQL and MySQL Workbench. Utilized SQLAlchemy in Python for data transformation, cleaning, and loading into a MySQL data warehouse. Performed exploratory data analytics on the data warehouse to identify global COVID-19 trends and visualized results in a Tableau dashboard. 
 
-**Stacks:** Python _(pandas, seaborn, matplotlib, numpy, sklearn, and pickle)_ and Streamlit
+**Stacks:** MySQL, MySQL Workbench, Python _(pandas)_, Tableau
 
-**Skils:** Machine Learning, Data Cleaning, and Data Visualization
+**Skills:** ETL (Extract, Transform, Load), Data warehousing, Data cleaning and transformation, Exploratory data analysis (EDA), SQL, Data visualization 
 
-{{< github-repo user="devmedeiros" repo="credit-score-classification-app" >}}
+{{< github-repo user="devmedeiros" repo="covid-tracking-project-sql" >}}
 
 ---
 
 ## Personal blog
 
-**Description:** A blog (where you are right now!) in that I write about what I'm learning, basically a portfolio.
+**Description:** A blog (where you are right now!) where I write about what's on my mind.
 
-**Stacks:** Hugo, Papermod theme, and Github Actions
+**Stacks:** HTML/CSS, Hugo, Papermod theme, and Github Actions
 
-{{< github-repo user="devmedeiros" repo="devmedeiros.github.io" >}}
+{{< github-repo user="devmedeiros" repo="thedataplaybook.github.io" >}}
 
 ---
 
