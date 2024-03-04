@@ -11,6 +11,8 @@ categories: ["blog", "data visualization"]
 
 ## King County, WA Housing Insights
 
+**Line Chart:**
+
 The line chart displays daily prices from May 1, 2014, to May 1, 2015, illustrating a general upward trend over the year with some fluctuations. Housing prices rise from an average of $0.5M to $1M by November 2014, peaking at $1.3M in May 2015. The zip codes with the highest average price, ranging from $0.9M to $1M, include 98109, 98105, 98004, and 98040. These zip codes, situated close to Lake Union, the only water body within city limits, are still connected to the mainland, possibly making them desirable locations for homes. This observation is supported by the fact that Vashon Island, despite being surrounded by water, is one of the cheapest places to own a home, likely due to its isolation from the mainland and possibly poorer infrastructure.
 
 **Histogram:**
