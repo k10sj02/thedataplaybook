@@ -37,7 +37,7 @@ _Location:_ The heat map doesn't account for location, which can significantly i
 
 _Market Trends:_ Real estate market trends can influence pricing. Depending on the market, a specific view (e.g., waterfront) might be more or less valuable to buyers, affecting the price of a house regardless of its physical condition.
 
-[^1] Why do I say the histogram is right-skewed? Aren't most data points clustered to the left? Doesn't that make it **left-skewed**?
+[^1]: Why do I say the histogram is right-skewed? Aren't most data points clustered to the left? Doesn't that make it **left-skewed**?
 
 > Imagine the midpoint of a seesaw with data points on either side representing their frequency (number of observations). 
 > 
