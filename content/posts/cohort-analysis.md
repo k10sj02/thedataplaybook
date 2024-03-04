@@ -39,4 +39,4 @@ Cohort analyses become even more powerful when drill down further into a specifi
 
 By mastering cohort table interpretation, you gain a powerful tool to decipher customer behavior and make informed business decisions, ultimately leading to improved customer engagement and retention.
 
-To read more, check my Github repo [here](https://github.com/k10sj02/sql-cohort-analysis).
+To read the SQL code, check my Github repo [here](https://github.com/k10sj02/sql-cohort-analysis).
