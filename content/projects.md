@@ -21,6 +21,17 @@ The following are a few projects that I have worked on in my free time. They are
 {{< github-repo user="k10sj02" repo="web-analytics-sql" >}}
 
 ---
+## SQL Online Commerce Cohort Analysis 
+
+**Description:** Utilized SSMS and Azure Data Studio to uncover insights into customer behavior, including cohort retention analysis and percentage breakdowns over time for online commerce database. Techniques such as CTEs, Temporary Tables, Window Functions, and the PIVOT function are employed to handle data transformation, calculation, and presentation. Created cohort dashboard in Tableau. Ideal for understanding online commerce trends and optimizing business strategies.
+
+**Stacks:** SQLite, Tableau
+
+**Skills:** CTEs, Temporary Tables, Window Functions, and the PIVOT function
+
+{{< github-repo user="k10sj02" repo="sql-cohort-analysis" >}}
+
+---
 
 ## Global COVID-19 Trend Analysis
 
