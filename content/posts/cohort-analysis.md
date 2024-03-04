@@ -6,8 +6,6 @@ tags: ["tableau"]
 categories: ["blog", "data visualization"]
 ---
 
-**Understanding the Cohort Table: A Step-by-Step Guide**
-
 Cohort tables offer valuable insights into customer behavior by grouping them based on shared attributes, in this case, acquisition date or date of first purchase. They are fantastic for identifying whether you have a **retention problem or a user acquisition problem** and can allow marketers to understand user behavior through experiments. Learning to read these tables can be tricky at first but effectively empowers you to analyze customer engagement, retention, and acquisition trends. 
 
 ![Dashboard 1 (1)](https://github.com/k10sj02/sql-cohort-analysis/assets/35823259/cac0136b-295b-4437-86d0-27b70e048df2)
