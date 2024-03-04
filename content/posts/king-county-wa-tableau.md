@@ -1,5 +1,5 @@
 ---
-title: "King's County Housing Sales Dashboard"
+title: "Insights into King County, WA Housing Market: Trends, Views, and Considerations"
 date: 2024-02-23T03:44:25-05:00
 draft: false
 tags: ["tableau", "dashboard"]
