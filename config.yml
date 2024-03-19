@@ -5,6 +5,14 @@ theme: PaperMod
 
 enableEmoji: true
 
+googleAnalytics: 
+privacy:
+  googleAnalytics:
+    anonymizeIP: true
+    disable: false
+    respectDoNotTrack: true
+    useSessionStorage: true
+
 params:
   author: Stann-Omar Jones
   homeInfoParams:
