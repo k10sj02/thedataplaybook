@@ -13,6 +13,16 @@ privacy:
     respectDoNotTrack: true
     useSessionStorage: true
 
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+        
 params:
   author: Stann-Omar Jones
   homeInfoParams:
