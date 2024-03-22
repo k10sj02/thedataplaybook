@@ -33,11 +33,11 @@ params:
       - This is a space dedicated to micro-blogging about topics that interest me and showcasing my data analysis projects. 🙂
 
   socialIcons:
-    - name: Github
+    - name: github
       url: "https://github.com/k10sj02"
-    - name: Linkedin
+    - name: linkedin
       url: "https://www.linkedin.com/in/stannomarjones"
-    - name: Rss
+    - name: rss
       url: "index.xml"
 
   ShowReadingTime: true
