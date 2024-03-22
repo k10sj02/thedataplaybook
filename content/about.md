@@ -17,8 +17,8 @@ My writing aims to be accessible to everyone, regardless of technical background
 
 You can find me at:
 
- {{< icon "linkedin" >}} [stannomarjones](https://www.linkedin.com/in/stannomarjones/)  
- {{< icon "github" >}} [k10sj02](https://github.com/k10sj02)  
+{{< icon "linkedin" >}} [stannomarjones](https://www.linkedin.com/in/stannomarjones/)  
+{{< icon "github" >}} [k10sj02](https://github.com/k10sj02)  
 
 ---
 ### Disclaimer
