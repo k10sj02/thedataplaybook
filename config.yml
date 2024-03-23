@@ -24,7 +24,6 @@ outputs:
         - JSON # is necessary
         
 params:
-  googleTagManager: "GTM-T842RMZR"
   author: Stann-Omar Jones
   homeInfoParams:
     Title: "Stann-Omar Jones"
