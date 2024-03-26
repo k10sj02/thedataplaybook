@@ -1,5 +1,5 @@
 ---
-title: "Understanding the Cohort Table: A Step-by-Step Guide a"
+title: "Understanding the Cohort Table: A Step-by-Step Guide"
 date: 2024-03-04T08:00:00-00:00
 draft: false
 tags: ["tableau"]
