@@ -10,7 +10,7 @@ noComment: true
 disableShare: true
 ---
 
-Hi! Myttt name is Stann-Omar Jones and I'm a data analyst. {{< round-image "https://avatars.githubusercontent.com/u/35823259?v=4" "stann-omar jones data analyst">}}
+Hi! MytttTT name is Stann-Omar Jones and I'm a data analyst. {{< round-image "https://avatars.githubusercontent.com/u/35823259?v=4" "stann-omar jones data analyst">}}
 This blog is my playground for exploring and sharing discoveries in the ever-evolving world of data science.
 
 My writing aims to be accessible to everyone, regardless of technical background. I'll explain coding concepts alongside real-world applications, making them engaging and understandable.
