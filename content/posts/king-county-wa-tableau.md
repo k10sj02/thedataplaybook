@@ -2,7 +2,7 @@
 title: "Real Estate Insights: Trends, Views, and Considerations in the King County, Washington Housing Market"
 date: 2024-02-23T03:44:25-05:00
 draft: false
-tags: ["tableau", "dashboard"]
+tags: ["tableau", "dashboard", "real estate"]
 categories: ["blog", "data visualization"]
 ---
 
