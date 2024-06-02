@@ -8,7 +8,9 @@ categories: ["blog", "data science"]
 
 ## A Quick Overview of Different Types of Data Objects in Pandas
 
-Understanding the various data objects in pandas is essential for efficient data manipulation and analysis. Here's a breakdown of the primary data structures you'll encounter in pandas:
+As part of my journey to deepen my Python knowledge, I’ve been working on data analysis projects at Shape Up The Vote Data Project. This non-partisan campaign aims to activate barbershops and salons as voter engagement hubs in 13 states with 5,500 participating shops by 2024. We use relational organizing principles and remote communication through text and phone banking. My role involves collecting, cleaning, and enriching data on potential participants to identify the best shops to contact.
+
+In this process, I’ve had the chance to explore the various data structures provided by pandas, a powerful library for data manipulation and analysis in Python. Here’s a quick overview of the primary data objects you’ll encounter in pandas:
 
 ### 1. Series
 **Description**: A one-dimensional labeled array capable of holding data of any type (integers, strings, floating point numbers, Python objects, etc.).
