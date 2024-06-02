@@ -1,6 +1,6 @@
 ---
 title: "SQL Web Analytics - Unveiling Trends & Strategies in Political Advocacy"
-date: 2024-06-02 23:18:35 -0400
+date: 2024-06-02 09:18:35 -0400
 draft: false
 tags: ["SQLite"]
 categories: ["blog", "data science", "politics"]
