@@ -1,3 +1,11 @@
+---
+title: "SQL Web Analytics - Unveiling Trends & Strategies in Political Advocacy"
+date: 2024-06-02 23:18:35 -0400
+draft: false
+tags: ["SQLite"]
+categories: ["blog", "data science", "politics"]
+---
+
 # SQL Web Analytics - Unveiling Trends & Strategies in Political Advocacy
 
 This repository houses SQL queries and data analysis scripts focused on website analytics. These tools are designed to generate insights specifically tailored for a fictional web team within a prominent political advocacy organization. The queries cover various aspects such as user engagement, revenue analysis, and page views over time. Additionally, the repository includes visualizations (Tableau) and recommendations based on the analysis performed. The exercises are structured to demonstrate proficiency in SQL querying, data analysis, and presentation of insights to support decision-making processes.
