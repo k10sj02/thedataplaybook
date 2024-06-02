@@ -164,15 +164,6 @@ lmic_renamed_new %>%
   scale_x_date(labels = date_format("%b"), breaks = "1 month")
 
 ggsave("Monthly_per_cent_change_in_employment_across_Canadian_provinces.png", width = 50, height = 30, units = "cm")
-```### Final Report (English)
-
-Here are my insights regarding nationwide jobs numbers across Canadian provinces from Jan 2020 to Sep 2020 across the wholesale and retail trade, accommodation and food services, as well as other services (public administration) sectors.
-
-As you can see, there is pronounced job loss across all provinces in the starting months of the COVID-19 pandemic (from Jan to April of 2020), with most provinces registering their first months of net positive jobs added starting in May 2020. This recovery took even longer to materialize in Quebec (i.e., June 2020) where the effect of the pandemic was especially marked with high rates of mortality and resultantly strict lockdown protocols. Despite all sectors being negatively affected by the COVID-19 pandemic, job loss was predictably substantial in the accommodation and food services sectors due to a decrease in public spending on leisure activities (Airbnb rentals, vacations, social outings, etc.). In general, this pattern of job loss was demonstrated across the wholesale and retail trade as well as other service sectors. However, these losses were less substantial than the ones exhibited across accommodation and food services.
-
-![Picture1](https://github.com/k10sj02/lmic-data/assets/35823259/823751d2-23f4-47ac-abf4-d9cf26647814)
-
-With the tightening of regulations starting in the summer of 2020, the recovery of jobs held throughout the rest of the year despite growth being weaker in the last three months of the fiscal year when pandemic regulations once more tightened as the cold weather season set in. Interestingly enough, despite considerable job losses in the accommodation and food services sector, this sector rebounded more strongly than the other observed sectors when COVID-19 regulations were loosened. This return to form was probably due to pent-up demand for leisure among Canadians who endured the strictest lockdown protocol in all of North America. In addition, accommodation and food service were defined by job freezes and temporary layoffs with many workers returning to their jobs once demand rebounded.
 
 ----- 
 
