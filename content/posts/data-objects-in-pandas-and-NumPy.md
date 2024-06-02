@@ -1,5 +1,5 @@
 ---
-title: "A Quick Overview of Different Types of Data Structures and Objects in Pandas"
+title: "A Quick Overview of Data Structures/Objects in Pandas/NumPy"
 date: 2024-06-01 23:18:35 -0400
 draft: false
 tags: ["python", "pandas", "NumPy"]
