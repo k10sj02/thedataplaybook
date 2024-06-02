@@ -1,5 +1,5 @@
 ---
-title: "A Quick Overview of Data Structures/Objects in Pandas/NumPy"
+title: "A Quick Overview of Data Structures/Objects"
 date: 2024-06-01 23:18:35 -0400
 draft: false
 tags: ["python", "pandas", "NumPy"]
@@ -11,6 +11,8 @@ As a Data Scientist at the ShapeUp Project, I’ve been working on data analysis
 We use relational organizing principles and remote communication through text and phone banking. My role involves collecting, cleaning, and enriching data on potential participants to identify the best shops to contact.
 
 In this process, I’ve had the chance to thoroughly explore the various data structures and objects provided by pandas, a powerful library for data manipulation and analysis, and NumPy, in Python. Here’s a quick overview of the primary data structures you’ll encounter in pandas and NumPy:
+
+## Pandas 
 
 ### 1. Series
 **Description**: A one-dimensional labeled array capable of holding data of any type (integers, strings, floating point numbers, Python objects, etc.).
@@ -96,7 +98,7 @@ timedeltas = pd.to_timedelta(['1 days', '2 days', '3 days'])
 periods = pd.period_range('2021-01', periods=3, freq='M')
 ```
 
-# Quick Overview of NumPy Data Objects
+## NumPy
 
 ### 1. ndarray (N-dimensional array)
 **Description**: The core data structure in NumPy, representing a multidimensional, homogeneous array of fixed-size items.
