@@ -1,3 +1,11 @@
+---
+title: "A Quick Overview of Different Types of Data Objects in Pandas"
+date: 2024-02-23T03:44:25-05:00
+draft: false
+tags: ["python", "pandas"]
+categories: ["blog", "data science"]
+---
+
 ## A Quick Overview of Different Types of Data Objects in Pandas
 
 Understanding the various data objects in pandas is essential for efficient data manipulation and analysis. Here's a breakdown of the primary data structures you'll encounter in pandas:
