@@ -3,7 +3,7 @@ title: "A Quick Overview of Different Types of Data Structures and Objects in Pa
 date: 2024-06-01 23:18:35 -0400
 draft: false
 tags: ["python", "pandas", "NumPy"]
-categories: ["blog", "data science"]
+categories: ["blog", "data science", "politics"]
 ---
 
 As a Data Scientist at the ShapeUp Project, I’ve been working on data analysis projects at Shape Up The Vote Data Project that activate barbershops and salons as voter engagement hubs in 13 states with 5,500 participating shops by 2024. 
