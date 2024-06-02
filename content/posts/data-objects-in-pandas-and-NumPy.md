@@ -182,4 +182,4 @@ print(scalar + np.array([1.0, 2.0]))
 
 Each of these data objects serves a specific purpose and is optimized for different types of data manipulation and analysis tasks. Understanding when and how to use each will help you make the most of pandas and NumPy in your data science projects.
 
-See our progress towards getting out the vote at SUTV here(https://github.com/k10sj02/shape-up-the-vote-2024).
+See our progress towards getting out the vote at SUTV [here](https://github.com/k10sj02/shape-up-the-vote-2024).
