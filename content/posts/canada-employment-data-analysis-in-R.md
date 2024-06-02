@@ -1,4 +1,10 @@
-## Analysis of Employment Data Across Canadian Provinces in R
+---
+title: "Analysis of Employment Data Across Canadian Provinces in R"
+date: 2024-06-02 12:18:35 -0400
+draft: false
+tags: ["R", "tidyverse", "dplyr"]
+categories: ["blog", "data science"]
+---
 
 As part of an analytics project for a client, I used R and various libraries to import, clean, and analyze datasets related to labor market statistics in British Columbia. This project involves reading data from CSV files, performing data cleansing operations, merging datasets, and generating visualizations such as box plots and a bar chart showing the monthly change in employment across Canadian provinces. 
 
