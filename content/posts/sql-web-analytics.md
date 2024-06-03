@@ -1,5 +1,5 @@
 ---
-title: "SQL Web Analytics: Optimizing User Engagement and Revenue"
+title: "Optimizing User Engagement and Revenue Using SQL"
 date: 2024-06-02 09:18:35 -0400
 draft: false
 tags: ["SQLite", "tableau"]
