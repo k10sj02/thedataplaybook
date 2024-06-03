@@ -1,5 +1,5 @@
 ---
-title: "COVID-Era Employment Trends Across Canadian Provinces in R"
+title: "COVID-Era Employment Trends Across Canada in R"
 date: 2024-06-02 12:18:35 -0400
 draft: false
 tags: ["R", "tidyverse", "dplyr"]
