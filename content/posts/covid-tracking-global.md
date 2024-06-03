@@ -12,7 +12,8 @@ From 2020 to 2021, I volunteered at the COVID Tracking Project, where our effort
 ### Dashboard
 This dashboard, inspired by Alex the Analyst, exemplifies the impact of our work in providing reliable data that informed public health decisions worldwide, playing a crucial role in creating transparent and globally accessible COVID-19 statistics.
 
-{{< tableau "viz1717382069134" "covid-tracking-global" "COVID-Dashboard" >}}
+{{< tableau "viz1717383664152" "co" "covid-tracking-global" "COVID-Dashboard" >}}
+
 
 The COVID Tracking Project dashboard, created on Tableau, provides a comprehensive visualization of COVID-19 data. It includes key metrics such as total cases, deaths, and tests conducted, presented in an easily interpretable format. The dashboard allows users to filter data by country, providing insights into regional trends and comparisons. Interactive elements enable users to explore detailed statistics over time, offering a clear and transparent view of the global impact of COVID-19.
 
