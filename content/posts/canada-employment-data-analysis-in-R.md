@@ -1,5 +1,5 @@
 ---
-title: "Analysis of Employment Data Across Canadian Provinces in R"
+title: "Analysis of COVID-Era Employment Data Across Canadian Provinces in R"
 date: 2024-06-02 12:18:35 -0400
 draft: false
 tags: ["R", "tidyverse", "dplyr"]
