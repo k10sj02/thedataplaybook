@@ -10,6 +10,8 @@ Cohort tables offer valuable insights into customer behavior by grouping them ba
 
 ![Dashboard 1 (1)](https://github.com/k10sj02/sql-cohort-analysis/assets/35823259/cac0136b-295b-4437-86d0-27b70e048df2)
 
+{{< tableau "viz1717383506650" "Co" "Cohort-Retention-Dashboard" "Dashboard1" >}}
+
 _See [cohort tables](https://public.tableau.com/views/Cohort-Retention-Dashboard/Dashboard1?:language=en-GB&:sid=&:display_count=n&:origin=viz_share_link) in Tableau public._
 
 **Three Effective Reading Methods:**
