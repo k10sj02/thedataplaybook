@@ -1,12 +1,10 @@
 ---
-title: "SQL Web Analytics - Unveiling Trends & Strategies in Political Advocacy"
+title: "SQL Web Analytics: Optimizing User Engagement and Revenue"
 date: 2024-06-02 09:18:35 -0400
 draft: false
 tags: ["SQLite", "tableau"]
 categories: ["blog", "data science", "politics"]
 ---
-
-## SQL Web Analytics - Unveiling Trends & Strategies in Political Advocacy
 
 In this project, I generated insights specifically tailored for a web team within a prominent political advocacy organization. The queries cover various aspects such as user engagement, revenue analysis, and page views over time. Additionally, I designed visualizations in Tableau and provided recommendations based on my findings.
 
@@ -315,9 +313,7 @@ This query identifies the most popular day for donations, which is also Friday.
 ## Key Insights and Recommendations:
 
 ### Device Segmentation:
-Understanding user behavior across various devices is essential. iOS users emerge as the top revenue generators, signaling the need for a mobile-first approach in design and functionality. Conversely, Windows users, contributing larger average gift sizes, might benefit from tailored messaging to encourage more frequent donations. The discernible trends among user segments underscore the significance of customized strategies to
-
- optimize revenue and engagement.
+Understanding user behavior across various devices is essential. iOS users emerge as the top revenue generators, signaling the need for a mobile-first approach in design and functionality. Conversely, Windows users, contributing larger average gift sizes, might benefit from tailored messaging to encourage more frequent donations. The discernible trends among user segments underscore the significance of customized strategies to optimize revenue and engagement.
 
 The data underscores distinct trends among user segments regarding revenue and average gift size. iOS users lead as the highest revenue generators, accumulating a total of $2066. Meanwhile, Windows users boast the highest average gift size, averaging $45 per donation, ranking second in overall revenue.
 
