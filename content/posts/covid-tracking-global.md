@@ -1,5 +1,5 @@
 ---
-title: "The COVID Tracking Project"
+title: "Global COVID Tracking Dashboard"
 date: 2024-06-02T10:44:25-05:00
 draft: false
 tags: ["tableau", "dashboard", "public health"]
