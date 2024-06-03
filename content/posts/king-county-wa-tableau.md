@@ -1,5 +1,5 @@
 ---
-title: "King County, Washington Housing Market: Trends and Insights"
+title: "King County, Washington Housing Market Dashboard: Trends and Insights"
 date: 2024-02-23T03:44:25-05:00
 draft: false
 tags: ["tableau", "dashboard", "real estate"]
