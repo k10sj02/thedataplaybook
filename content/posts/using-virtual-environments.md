@@ -1,3 +1,11 @@
+---
+title: "Using Virtual Environments in Python"
+date: 2024-06-02 12:18:35 -0400
+draft: true
+tags: ["python"]
+categories: ["blog", "data science"]
+---
+
 ## The Benefits of Using Virtual Environments and a Quick Tutorial on Virtualenvwrapper
 
 ### Introduction
