@@ -1,6 +1,6 @@
 ---
 title: "Using Virtual Environments in Python"
-date: 2024-06-09 12:18:35 -0400
+date: 2024-03-31T10:44:25-05:00
 draft: false
 tags: ["python"]
 categories: ["blog", "data science"]
