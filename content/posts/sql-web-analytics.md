@@ -1,6 +1,6 @@
 ---
 title: "Optimizing User Engagement and Revenue Using SQL"
-date: 2024-06-02 09:18:35 -0400
+date: 2024-04-15 09:18:35 -0400
 draft: false
 tags: ["SQLite", "tableau"]
 categories: ["blog", "data science", "politics"]
