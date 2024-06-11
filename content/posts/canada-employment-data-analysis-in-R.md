@@ -1,6 +1,6 @@
 ---
 title: "COVID-Era Employment Trends Across Canada in R"
-date: 2024-06-02 12:18:35 -0400
+date: 2024-05-02 12:18:35 -0400
 draft: false
 tags: ["R", "tidyverse", "dplyr"]
 categories: ["blog", "data science"]
