@@ -1,6 +1,6 @@
 ---
 title: "Data Structures/Objects in Python: An Overview"
-date: 2024-06-01 23:18:35 -0400
+date: 2024-02-01 23:18:35 -0400
 draft: false
 tags: ["python", "pandas", "NumPy"]
 categories: ["blog", "data science", "politics"]
