@@ -30,7 +30,7 @@ For example, think of a method as a “method to the madness” of a class of ob
 
 #### Attributes
 
-An **attribute** is a characteristic or property of an object. Unlike methods, attributes do not use parentheses. You can think of attributes as describing the innate features of an object, similar to saying someone is tall or has red hair.
+An **attribute** is a characteristic or property of an object. Unlike methods, attributes do not use parentheses. You can think of attributes as describing the innate features of an object, similar to saying someone is tall, has red hair, or 10 fingers.
 
 For example, in a class representing a car, attributes might include the color, make, and model of the car:
 ```python
