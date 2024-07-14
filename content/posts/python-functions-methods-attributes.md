@@ -1,4 +1,10 @@
-### Understanding the Difference Between Functions, Methods, and Attributes in Python
+---
+title: "Differentiating Between Functions, Methods, and Attributes in Python"
+date: 2024-01-15 23:18:35 -0400
+draft: false
+tags: ["python"]
+categories: ["blog", "data science"]
+---
 
 Python can be a bit confusing at times, especially when it comes to understanding the differences between functions, methods, and attributes. Let's break down these concepts to make them clearer.
 
