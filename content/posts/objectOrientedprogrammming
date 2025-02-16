@@ -1,3 +1,11 @@
+---
+title: "Differentiating Between Functions, Methods, and Attributes in Python"
+date: 2025-02-15 23:18:35 -0400
+draft: false
+tags: ["python"]
+categories: ["blog", "data science"]
+---
+
 # **Understanding Object-Oriented Programming (OOP) in Python**
 
 Lately, I’ve been revisiting some fundamentals to reinforce Python’s role as a powerful tool for **object-oriented programming (OOP)**. My mentor, **Baur Safi**, encouraged me to use Python like a developer—not just as an analyst—and I completely agree. Understanding data structures is essential, but incorporating OOP principles makes you a much stronger problem solver.
