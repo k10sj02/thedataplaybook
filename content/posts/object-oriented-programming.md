@@ -64,7 +64,7 @@ print(my_electric_car.charge())  # Output: Charging Tesla Model S with a 100-kWh
 ## **Understanding Classes in Python**
 
 ### **What is a Class?**
-A **class** is a blueprint for creating objects. Objects (instances of a class) have **attributes** (which store data about an object)** and **methods** (functions that define behaviors specific to that class)**. Without attributes and methods, a class would serve no purpose.
+A **class** is a blueprint for creating objects. Objects (instances of a class) have **attributes** (which store data about an object) and **methods** (functions that define behaviors specific to that class)**. Without attributes and methods, a class would serve no purpose.
 
 💡 **Analogy:**  
 Think of a **class** as a blueprint for a type of vehicles— like electric cars, pickup trucks, sedans, SUVs. Each **car** (object) is a specific instance of that blueprint, with unique characteristics like color, make, and model (attributes) and actions it can perform, such as accelerating or honking (methods).
@@ -105,7 +105,7 @@ A **method** is a function that is **tied to a specific class** and operates on 
 ✅ Must be **called on an instance of a class**.  
 ✅ Accessed using dot notation (`object.method_name`).  
 ✅ Typically operates on the instance’s data.
-✅ Followed by parentheses.
+✅ Followed by parentheses which may contain arguments.
 
 #### **Example:**
 ```python
