@@ -8,9 +8,11 @@ categories: ["blog", "data science"]
 
 # **Understanding Object-Oriented Programming (OOP) in Python**
 
-Lately, I’ve been revisiting some fundamentals to reinforce Python’s role as a powerful tool for **object-oriented programming (OOP)**. My mentor, **Baur Safi**, encouraged me to use Python like a developer—not just as an analyst—and I completely agree. Understanding data structures is essential, but incorporating OOP principles makes you a much stronger problem solver.
+Lately, I’ve been revisiting some fundamentals to reinforce Python’s role as a powerful tool for **object-oriented programming (OOP)**. My mentor encouraged me to use Python like a developer—not just as an analyst—and I completely agree. Understanding data structures is essential, but incorporating OOP principles makes you a much stronger problem solver.
 
 Surprisingly, many analysts either **never learn OOP theory** or only encounter it after they’ve already become proficient in Python.
+
+I wish I had learned about OOP from the beginning. As someone who grew up switching between languages—English, Creole, Spanish, and French—learning the “linguistics” of Python felt familiar. Just as recognizing patterns and exceptions made it easier to learn new spoken languages, understanding OOP patterns helped deepen my knowledge of Python.
 
 ## **What is Object-Oriented Programming (OOP)?**
 
@@ -62,10 +64,10 @@ print(my_electric_car.charge())  # Output: Charging Tesla Model S with a 100-kWh
 ## **Understanding Classes in Python**
 
 ### **What is a Class?**
-A **class** is a blueprint for creating objects. Objects are instances of a class, with **attributes (data)** and **methods (functions specific to that class)**. Without attributes and methods, a class would serve no purpose.
+A **class** is a blueprint for creating objects. Objects (instances of a class) have **attributes** (which store data about an object)** and **methods** (functions that define behaviors specific to that class)**. Without attributes and methods, a class would serve no purpose.
 
 💡 **Analogy:**  
-Think of a **class** as a category of vehicles—pickup trucks, sedans, SUVs. Each specific **car** (object) belongs to a category (class) and has unique features (attributes) and behaviors (methods).
+Think of a **class** as a blueprint for a type of vehicles— like electric cars, pickup trucks, sedans, SUVs. Each **car** (object) is a specific instance of that blueprint, with unique characteristics like color, make, and model (attributes) and actions it can perform, such as accelerating or honking (methods).
 
 ### **Functions, Methods, and Attributes: Key Differences**
 
@@ -83,10 +85,10 @@ A **function** is a general-purpose operation that can be used anywhere in your 
 
 #### **Example:** A function that calculates the square of a number:
 ```python
-def square(num):
-    return num * num
+def fuel_efficiency(miles, gallons):
+    return miles / gallons  # Calculates miles per gallon (MPG)
 
-print(square(4))  # Output: 16
+print(fuel_efficiency(300, 10))  # Output: 30.0
 ```
 #### **Built-in Function Example:**  
 - `len(obj)`: Returns the length of an object, like a string or list.
@@ -96,12 +98,14 @@ print(square(4))  # Output: 16
 ---
 
 ### **2. Methods**
-A **method** is a function that is **tied to a specific class** and operates on an instance of that class.
+A **method** is a function that is **tied to a specific class** and operates on an instance of that class. You can recognize methods by their syntax: they are called on an object using dot notation (object.method_name()) and are followed by parentheses, which may contain arguments.
 
 📌 **Key Traits:**  
 ✅ Defined **inside a class**.  
 ✅ Must be **called on an instance of a class**.  
+✅ Accessed using dot notation (`object.method_name`).  
 ✅ Typically operates on the instance’s data.
+✅ Require parentheses.
 
 #### **Example:**
 ```python
@@ -123,7 +127,7 @@ print(my_car.honk())  # Output: Toyota says Beep beep!
 ---
 
 ### **3. Attributes**
-An **attribute** is a variable stored inside an object. Unlike methods, **attributes do not use parentheses** when accessed.
+An **attribute** is a variable that is associated with an object in object-oriented programming. Unlike methods, attributes **do not use parentheses** when accessed. An attribute represents a characteristic or feature of the object. For example, a car object might have attributes like its make, color, or model. These attributes store data or metadata that describe the intrinsic properties of the object itself. Attributes are accessed using dot notation, and unlike methods, they are not followed by parentheses. For example, car.color is an attribute that would return the color of the car object.
 
 📌 **Key Traits:**  
 ✅ Stores **information** about an object.  
