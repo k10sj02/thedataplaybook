@@ -1,5 +1,5 @@
 ---
-title: "Differentiating Between Functions, Methods, and Attributes in Python"
+title: "Introduction to Object-Oriented Programming in Python"
 date: 2025-02-15 23:18:35 -0400
 draft: false
 tags: ["python"]
