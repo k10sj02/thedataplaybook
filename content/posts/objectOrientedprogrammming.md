@@ -12,7 +12,7 @@ Lately, I’ve been revisiting some fundamentals to reinforce Python’s role as
 
 Surprisingly, many analysts either **never learn OOP theory** or only encounter it after they’ve already become proficient in Python.
 
-I wish I had learned about OOP from the beginning. As someone who grew up switching between languages—English, Creole, Spanish, and French—learning the “linguistics” of Python felt familiar. Just as recognizing patterns and exceptions made it easier to learn new spoken languages, understanding OOP patterns helped deepen my knowledge of Python.
+I wish I had learned about OOP from the beginning. As someone who grew up switching between languages, learning the “linguistics” of Python felt familiar. Just as recognizing patterns and exceptions made it easier to learn new spoken languages, understanding OOP patterns helped deepen my knowledge of Python.
 
 ## **What is Object-Oriented Programming (OOP)?**
 
@@ -154,5 +154,3 @@ print(my_car.color)  # Output: Red
 
 ## **Final Thoughts**
 Understanding OOP principles—**classes, functions, methods, and attributes**—helps unlock Python’s full potential. Whether you’re a data analyst, developer, or someone just learning the language, recognizing these core ideas makes your code more **efficient, reusable, and scalable**.
-
-Would love to hear your thoughts—did this explanation help clarify things for you? 🚀
