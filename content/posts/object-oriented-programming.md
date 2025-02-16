@@ -98,7 +98,7 @@ print(fuel_efficiency(300, 10))  # Output: 30.0
 ---
 
 ### **2. Methods**
-A **method** is a function that is **tied to a specific class** and operates on an instance of that class. A method is like a special action that a specific car can perform. Only that car knows how to do this action, and it can use its own parts or other car features.
+A **method** is a function that is **tied to a specific class** and operates on an instance of that class.
 
 📌 **Key Traits:**  
 ✅ Defined **inside a class**.  
