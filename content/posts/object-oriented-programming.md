@@ -83,7 +83,7 @@ A **function** is a general-purpose operation that can be used anywhere in your 
 ✅ Works globally—**not tied to any specific object**.  
 ✅ Operates on **any type of object**, depending on input.
 
-#### **Example:** A function that calculates the square of a number:
+#### **Example:** A function that calculates the fuel efficiency of a vehicle:
 ```python
 def fuel_efficiency(miles, gallons):
     return miles / gallons  # Calculates miles per gallon (MPG)
@@ -98,14 +98,14 @@ print(fuel_efficiency(300, 10))  # Output: 30.0
 ---
 
 ### **2. Methods**
-A **method** is a function that is **tied to a specific class** and operates on an instance of that class. You can recognize methods by their syntax: they are called on an object using dot notation (object.method_name()) and are followed by parentheses, which may contain arguments.
+A **method** is a function that is **tied to a specific class** and operates on an instance of that class. A method is like a special action that a specific car can perform. Only that car knows how to do this action, and it can use its own parts or other car features.
 
 📌 **Key Traits:**  
 ✅ Defined **inside a class**.  
 ✅ Must be **called on an instance of a class**.  
 ✅ Accessed using dot notation (`object.method_name`).  
 ✅ Typically operates on the instance’s data.
-✅ Require parentheses.
+✅ Followed by parentheses.
 
 #### **Example:**
 ```python
