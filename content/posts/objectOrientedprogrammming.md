@@ -1,12 +1,12 @@
 ---
-title: "Introduction to Object-Oriented Programming in Python"
+title: "Introduction to Object-Oriented Programming (OOP) in Python"
 date: 2025-02-15 23:18:35 -0400
 draft: false
 tags: ["python"]
 categories: ["blog", "data science"]
 ---
 
-# **Understanding Object-Oriented Programming (OOP) in Python**
+# **Why Learn OOP?**
 
 Lately, I’ve been revisiting some fundamentals to reinforce Python’s role as a powerful tool for **object-oriented programming (OOP)**. My mentor encouraged me to use Python like a developer—not just as an analyst—and I completely agree. Understanding data structures is essential, but incorporating OOP principles makes you a much stronger problem solver.
 
@@ -14,7 +14,7 @@ Surprisingly, many analysts either **never learn OOP theory** or only encounter 
 
 I wish I had learned about OOP from the beginning. As someone who grew up switching between languages, learning the “linguistics” of Python felt familiar. Just as recognizing patterns and exceptions made it easier to learn new spoken languages, understanding OOP patterns helped deepen my knowledge of Python.
 
-## **What is Object-Oriented Programming (OOP)?**
+## **What is OOP?**
 
 OOP is a programming paradigm that structures code around **objects**, which encapsulate both **data** (attributes) and **behavior** (methods). In Python, **almost everything is an object**.
 
