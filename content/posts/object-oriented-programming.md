@@ -104,8 +104,8 @@ A **method** is a function that is **tied to a specific class** and operates on 
 ✅ Defined **inside a class**.  
 ✅ Must be **called on an instance of a class**.  
 ✅ Accessed using dot notation (`object.method_name`).  
-✅ Typically operates on the instance’s data.
-✅ Followed by parentheses which may contain arguments.
+- ✅ Typically operates on the instance’s data.  
+- ✅ Followed by parentheses which may contain arguments.
 
 #### **Example:**
 ```python
