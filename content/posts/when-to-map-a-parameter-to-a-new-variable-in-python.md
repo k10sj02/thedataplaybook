@@ -1,4 +1,10 @@
-# When Should You Map a Parameter to a New Variable in Python?
+---
+title: "When Should You Map a Parameter to a New Variable in Python?"
+date: 2024-01-02 12:18:35 -0400
+draft: false
+tags: ["python"]
+categories: ["blog", "data science"]
+---
 
 When writing functions in Python, you may sometimes find yourself assigning a function parameter to a new variable. While this can improve readability and functionality, it’s not always necessary. In this article, we’ll explore when and why mapping parameters to new variables makes sense—and when it doesn’t.
 
