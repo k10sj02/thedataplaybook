@@ -1,6 +1,7 @@
 # Stann-Omar Jones
 
-[![github pages](https://github.com/devmedeiros/devmedeiros.github.io/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/devmedeiros/devmedeiros.github.io/actions/workflows/gh-pages.yml) [![License](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-blue)](#license) [![Website stannomarjones.com](https://img.shields.io/website-up-down-green-red/http/devmedeiros.com.svg)](http://devmedeiros.com/)
+[![github pages](https://https://github.com/k10sj02/thedataplaybook/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/k10sj02/thedataplaybook/actions/workflows/gh-pages.yml/badge.svg) [![License](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-blue)](#license) [![Website stannomarjones.com](https://img.shields.io/website-up-down-green-red/http/devmedeiros.com.svg)](http://devmedeiros.com/)
+
 
 ## About
 
