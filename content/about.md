@@ -19,6 +19,7 @@ You can find me at:
 
 {{< icon "linkedin" >}} [stannomarjones](https://www.linkedin.com/in/stannomarjones/)  
 {{< icon "github" >}} [k10sj02](https://github.com/k10sj02)
+<i class="fas fa-paint-brush"></i> Tableau
 
 ---
 
