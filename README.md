@@ -1,14 +1,14 @@
-# Dev Medeiros
+# Stann-Omar Jones
 
-[![github pages](https://github.com/devmedeiros/devmedeiros.github.io/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/devmedeiros/devmedeiros.github.io/actions/workflows/gh-pages.yml) [![License](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-blue)](#license) [![Website devmedeiros.com](https://img.shields.io/website-up-down-green-red/http/devmedeiros.com.svg)](http://devmedeiros.com/)
+[![github pages](https://github.com/devmedeiros/devmedeiros.github.io/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/devmedeiros/devmedeiros.github.io/actions/workflows/gh-pages.yml) [![License](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-blue)](#license) [![Website stannomarjones.com](https://img.shields.io/website-up-down-green-red/http/devmedeiros.com.svg)](http://devmedeiros.com/)
 
 ## About
 
-A blog for Data Science maintained by Jaqueline Medeiros. Detailed description in the blog's [about](https://devmedeiros.com/about/) page.
+A blog for Data Science maintained by Jaqueline Medeiros. Detailed description in the blog's [about](https://stannomarjones.com/about/) page.
 
 ## Viewing the Site
 
-This website is hosted at https://devmedeiros.com.
+This website is hosted at https://stannomarjones.com.
 
 ## License
 
