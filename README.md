@@ -43,7 +43,7 @@ Hence, any individual or group of individuals can reuse and modify the material 
 
 - The purpose is non-commercial.
 
-- Credit is given to the author by mentioning their name (Jaqueline Medeiros) and linking to the original content.
+- Credit is given to the author by mentioning their name (Stann-Omar Jones) and linking to the original content.
 
 - The new material must be distributed under the same license.
 
