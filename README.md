@@ -4,7 +4,7 @@
 
 ## About
 
-A blog for Data Science maintained by Jaqueline Medeiros. Detailed description in the blog's [about](https://stannomarjones.com/about/) page.
+A blog for Data Science maintained by Stann-Omar Jones. Detailed description in the blog's [about](https://stannomarjones.com/about/) page.
 
 ## Viewing the Site
 
