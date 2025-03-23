@@ -19,7 +19,7 @@ You can find me at:
 
 {{< icon "linkedin" >}} [stannomarjones](https://www.linkedin.com/in/stannomarjones/)  
 {{< icon "github" >}} [k10sj02](https://github.com/k10sj02)
-<i class="fas fa-paint-brush"></i> [tableau](https://public.tableau.com/app/profile/stann6239/vizzes)
+{{< tableauicon >}} [tableau](https://public.tableau.com/app/profile/stann6239/vizzes)
 
 ---
 
