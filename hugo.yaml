@@ -37,6 +37,8 @@ params:
       url: "https://github.com/k10sj02"
     - name: linkedin
       url: "https://www.linkedin.com/in/stannomarjones"
+    - name: tableau
+      url: "https://public.tableau.com/app/profile/stann6239/vizzes"
     - name: rss
       url: "index.xml"
 
