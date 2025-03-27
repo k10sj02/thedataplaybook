@@ -6,19 +6,17 @@ tags: ["tableau", "dashboard"]
 categories: ["blog", "data science"]
 ---
 
-# How to Present A Dashboard
-
 Presenting a dashboard, especially when it's compact like a one-page overview, requires a structured approach to convey insights effectively and keep the audience engaged. A typical presentation time for this kind of dashboard is around 15-20 minutes, as this provides enough time to cover the dashboard's key elements without overwhelming your audience.
 
 Here's how you can present a dashboard beyond just the basics:
 
 ## Start with Context (4-7 minutes)
 
-**Introduce the Purpose**: Begin by explaining the objective of the dashboard. What is the problem or decision it's intended to help with? Who is the audience, and what decisions will they make based on this data?
+```**Introduce the Purpose**: Begin by explaining the objective of the dashboard. What is the problem or decision it's intended to help with? Who is the audience, and what decisions will they make based on this data?
 
 **Explain the Metrics**: Briefly describe the key metrics or data points displayed on the dashboard. Make sure to highlight the most important KPIs (Key Performance Indicators) that are crucial for your audience to focus on.
 
-This dashboard provides a comprehensive analysis of STD trends across the United States from 1996 to the present, offering insights into how infection rates have evolved over time. The goal is to help policymakers, public health officials, and researchers better understand the patterns and factors contributing to the spread of STDs.
+This dashboard provides a comprehensive analysis of STD trends across the United States from 1996 to the present, offering insights into how infection rates have evolved over time. The goal is to help policymakers, public health officials, and researchers better understand the patterns and factors contributing to the spread of STDs.```
 
 ### Who is the Audience?
 
