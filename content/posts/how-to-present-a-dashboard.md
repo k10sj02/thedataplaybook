@@ -1,6 +1,6 @@
 ---
 title: "How to Present a Dashboard"
-date: 2024-03-24 12:18:35 -0400
+date: 2024-03-27 12:18:35 -0400
 draft: false
 tags: ["tableau", "dashboard"]
 categories: ["blog", "data science"]
