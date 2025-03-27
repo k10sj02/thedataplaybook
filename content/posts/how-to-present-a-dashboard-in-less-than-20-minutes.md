@@ -6,6 +6,8 @@ tags: ["tableau", "dashboard", "public health"]
 categories: ["blog", "data science"]
 ---
 
+I took Andy Kriebel’s Makeover Monday challenge a step further by creating a quick tutorial on how to present a dashboard. Surprisingly, I couldn’t find a comprehensive resource on this topic online, so I’m hoping other netizens will find this helpful.
+
 Presenting a dashboard, especially when it's compact like a one-page overview, requires a structured approach to convey insights effectively and keep the audience engaged. A typical presentation time for this kind of dashboard is around 15-20 minutes, as this provides enough time to cover the dashboard's key elements without overwhelming your audience.
 
 Here's how you can present a dashboard beyond just the basics:
