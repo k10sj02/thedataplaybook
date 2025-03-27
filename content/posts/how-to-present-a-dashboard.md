@@ -10,6 +10,8 @@ Presenting a dashboard, especially when it's compact like a one-page overview, r
 
 Here's how you can present a dashboard beyond just the basics:
 
+{{< tableau "viz1743063721041" "ST" "STDRatesintheUS_17418338437490" "STDSummaryDashboard" >}}
+
 ## Start with Context (4-7 minutes)
 
 **Introduce the Purpose**: Begin by explaining the objective of the dashboard. What is the problem or decision it's intended to help with? Who is the audience, and what decisions will they make based on this data?
