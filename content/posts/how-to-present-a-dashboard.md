@@ -16,6 +16,7 @@ Here's how you can present a dashboard beyond just the basics:
 
 **Explain the Metrics**: Briefly describe the key metrics or data points displayed on the dashboard. Make sure to highlight the most important KPIs (Key Performance Indicators) that are crucial for your audience to focus on.
 
+### Voiceover Script
 This dashboard provides a comprehensive analysis of STD trends across the United States from 1996 to the present, offering insights into how infection rates have evolved over time. The goal is to help policymakers, public health officials, and researchers better understand the patterns and factors contributing to the spread of STDs.`
 
 ### Who is the Audience?
@@ -67,6 +68,8 @@ By focusing on these key indicators, users can quickly assess overall infection 
 
 **TIP**: When presenting, remember to demo or toggle through the sections of the dashboard as you walk through the layout for the audience. This allows the audience to follow along and see how each section connects to the next, ensuring they can visualize the flow of the data and better understand the context of your analysis. It also helps make the presentation more dynamic and engaging.
 
+
+### Voiceover Script
 #### Geographic Distribution (Top-Left)
 - This heatmap highlights state-by-state variations, immediately showing which states have the highest and lowest STD rates.
 - This connects to the demographic trends section, helping us investigate whether certain population groups in high-prevalence states are driving the overall rates.
@@ -104,6 +107,8 @@ This logical flow ensures that each section builds upon the previous one, guidin
 
 **TIP**: When presenting the insights section, be sure to click through the dashboard as you go, allowing the audience to follow your findings in real-time. This helps maintain engagement and ensures that the data you're discussing is visually connected to the points you're making, making the insights more impactful and easier to understand.
 
+
+### Voiceover Script
 Here are the top insights from the dashboard, highlighting major trends in STD rates across demographics and time:
 
 ### States with the Highest and Lowest STD Rates
@@ -140,6 +145,8 @@ These findings highlight geographic disparities, gender-specific trends, and age
 
 **Next Steps**: Suggest further exploration if needed, e.g., "We can drill into these customer feedback categories to get more specific insights."
 
+
+### Voiceover Script
 Based on the trends observed in the dashboard, here are key recommendations to address the most pressing STD trends:
 
 ### Targeted Public Health Campaigns in High-Risk States
