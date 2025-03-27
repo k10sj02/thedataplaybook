@@ -158,7 +158,7 @@ Based on the trends observed in the dashboard, here are key recommendations to a
 
 ### Gender-Specific Interventions
 - Since STD rates among women are consistently higher, especially for chlamydia, healthcare providers should implement routine screenings in high-risk age groups (15-24 years old) and ensure wider availability of affordable testing and treatment options.
-- Studies indicate that women are less likely to negotiate condom use and other protective measures during sex and are more vulnerable to gender-based violence, including assault, rape, and stealthing—all of which may contribute to higher STD rates. To reduce transmission, comprehensive sexual education should prioritize consent, communication, and mutual agreement for both men and women.
+- Studies indicate that [women are less likely to negotiate condom use](https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-025-22315-0#:~:text=Regarding%20early%20sexual%20debut%2C%20AGYW,0.97%3B%20p%20%3D%200.027\).) and other protective measures during sex and are [more vulnerable to gender-based violence](https://www.unwomen.org/en/articles/facts-and-figures/facts-and-figures-ending-violence-against-women), including assault, rape, and stealthing—all of which may contribute to higher STD rates. To reduce transmission, comprehensive sexual education should prioritize consent, communication, and mutual agreement for both men and women.
 - For men, given the dramatic increase in syphilis, there should be a stronger emphasis on early detection, education on risk factors, and targeted interventions for high-risk groups.
 
 ### Age-Focused Prevention Strategies
