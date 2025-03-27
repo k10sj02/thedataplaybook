@@ -1,5 +1,5 @@
 ---
-title: "How to Present a Dashboard in < 20 Mins"
+title: "How to Present a Dashboard in Less Than 20 Mins"
 date: 2025-03-27 03:00:35 -0400
 draft: false
 tags: ["tableau", "dashboard", "public health"]
