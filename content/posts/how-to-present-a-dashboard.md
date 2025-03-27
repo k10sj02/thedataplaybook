@@ -1,6 +1,6 @@
 ---
 title: "How to Present a Dashboard"
-date: 2025-03-27 12:18:35 -0400
+date: 2025-03-27 03:00:35 -0400
 draft: false
 tags: ["tableau", "dashboard", "public health"]
 categories: ["blog", "data science"]
