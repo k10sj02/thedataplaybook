@@ -6,15 +6,20 @@ tags: ["SQL"]
 categories: ["data science"]
 ---
 
-1️⃣ Running Totals & Cumulative Sums
+# 🏆 Ultimate SQL Interview Cheat Sheet
 
-✅ Key Function: SUM() OVER (ORDER BY column)
-✅ Use Case: Running totals of revenue, sales, or cumulative counts.
-📌 Example: Compute cumulative revenue over time.
+## 1️⃣ Running Totals & Cumulative Sums
 
+✅ **Key Function:** `SUM() OVER (ORDER BY column)`  
+✅ **Use Case:** Running totals of revenue, sales, or cumulative counts.  
+📌 **Example:** Compute cumulative revenue over time.
+
+```sql
 SELECT order_date, total_amount, 
-       SUM(total_amount) OVER (ORDER BY order_date) AS running_total
+       SUM(total_amount) OVER (ORDER BY order_date) AS running_total 
 FROM orders;
+
+
 
 ⸻
 
@@ -24,8 +29,10 @@ FROM orders;
 📌 Example: Compute 7-day rolling average of revenue.
 
 SELECT order_date, total_amount, 
-       AVG(total_amount) OVER (ORDER BY order_date ROWS BETWEEN 6 PRECEDING AND CURRENT ROW) AS moving_avg
+       AVG(total_amount) OVER (ORDER BY order_date ROWS BETWEEN 6 PRECEDING AND CURRENT ROW) AS moving_avg 
 FROM orders;
+
+
 
 ⸻
 
@@ -44,6 +51,8 @@ SELECT customer_id, COALESCE(total_amount, 0) AS total_amount FROM orders;
 
 SELECT revenue / NULLIF(orders, 0) FROM sales;
 
+
+
 ⸻
 
 4️⃣ Date & Time Manipulation
@@ -56,13 +65,16 @@ SELECT revenue / NULLIF(orders, 0) FROM sales;
 
 📌 Example: Find total sales per month.
 
-SELECT DATE_TRUNC('month', order_date) AS month, SUM(total_amount)
-FROM orders
+SELECT DATE_TRUNC('month', order_date) AS month, SUM(total_amount) 
+FROM orders 
 GROUP BY month;
 
 📌 Example: Find orders placed in the last 7 days.
 
-SELECT * FROM orders WHERE order_date >= CURRENT_DATE - INTERVAL '7 days';
+SELECT * FROM orders 
+WHERE order_date >= CURRENT_DATE - INTERVAL '7 days';
+
+
 
 ⸻
 
@@ -74,17 +86,21 @@ SELECT * FROM orders WHERE order_date >= CURRENT_DATE - INTERVAL '7 days';
 📌 Example: Compute top customers by revenue using a CTE.
 
 WITH customer_revenue AS (
-    SELECT customer_id, SUM(total_amount) AS total_revenue
-    FROM orders
+    SELECT customer_id, SUM(total_amount) AS total_revenue 
+    FROM orders 
     GROUP BY customer_id
-)
-SELECT * FROM customer_revenue ORDER BY total_revenue DESC LIMIT 10;
+) 
+SELECT * FROM customer_revenue 
+ORDER BY total_revenue DESC 
+LIMIT 10;
 
 📌 Example: Find customers who spent more than the average order amount using a subquery.
 
-SELECT customer_id, total_amount
-FROM orders
+SELECT customer_id, total_amount 
+FROM orders 
 WHERE total_amount > (SELECT AVG(total_amount) FROM orders);
+
+
 
 ⸻
 
@@ -92,17 +108,19 @@ WHERE total_amount > (SELECT AVG(total_amount) FROM orders);
 
 ✅ Key Function: Recursive WITH
 ✅ Use Case: Hierarchical relationships (e.g., org charts, folder structures).
+
 📌 Example: Find all employees reporting to a specific manager.
 
 WITH RECURSIVE employee_hierarchy AS (
-    SELECT employee_id, manager_id, 1 AS depth
-    FROM employees
-    WHERE manager_id IS NULL  -- Start with the CEO
+    SELECT employee_id, manager_id, 1 AS depth 
+    FROM employees 
+    WHERE manager_id IS NULL -- Start with the CEO
     UNION ALL
-    SELECT e.employee_id, e.manager_id, h.depth + 1
-    FROM employees e
-    JOIN employee_hierarchy h ON e.manager_id = h.employee_id
-)
+    SELECT e.employee_id, e.manager_id, h.depth + 1 
+    FROM employees e 
+    JOIN employee_hierarchy h 
+    ON e.manager_id = h.employee_id
+) 
 SELECT * FROM employee_hierarchy;
 
 
@@ -112,11 +130,14 @@ SELECT * FROM employee_hierarchy;
 7️⃣ Joins (Inner, Left, Right, Full, Self Joins, Cross Joins)
 
 ✅ Use Case: Combine data from multiple tables efficiently.
+
 📌 Example: Find customer orders and their details.
 
-SELECT customers.name, orders.order_date, orders.total_amount
-FROM customers
+SELECT customers.name, orders.order_date, orders.total_amount 
+FROM customers 
 LEFT JOIN orders ON customers.customer_id = orders.customer_id;
+
+
 
 ⸻
 
@@ -129,8 +150,13 @@ LEFT JOIN orders ON customers.customer_id = orders.customer_id;
 
 📌 Example: Find customers who have placed at least one order.
 
-SELECT name FROM customers
-WHERE EXISTS (SELECT 1 FROM orders WHERE orders.customer_id = customers.customer_id);
+SELECT name 
+FROM customers 
+WHERE EXISTS (
+    SELECT 1 FROM orders WHERE orders.customer_id = customers.customer_id
+);
+
+
 
 ⸻
 
@@ -142,7 +168,11 @@ Performance	Medium	Fast	Can be slow with large data
 
 📌 Example: Count unique customers per region.
 
-SELECT region, COUNT(DISTINCT customer_id) FROM customers GROUP BY region;
+SELECT region, COUNT(DISTINCT customer_id) 
+FROM customers 
+GROUP BY region;
+
+
 
 ⸻
 
@@ -156,9 +186,11 @@ SELECT region, COUNT(DISTINCT customer_id) FROM customers GROUP BY region;
 📌 Example: Pivot sales data by region.
 
 SELECT 
-    SUM(CASE WHEN region = 'North' THEN total_amount END) AS north_sales,
-    SUM(CASE WHEN region = 'South' THEN total_amount END) AS south_sales
+    SUM(CASE WHEN region = 'North' THEN total_amount END) AS north_sales, 
+    SUM(CASE WHEN region = 'South' THEN total_amount END) AS south_sales 
 FROM orders;
+
+
 
 ⸻
 
@@ -171,9 +203,11 @@ FROM orders;
 
 📌 Example: Aggregating data from multiple sources into a single table.
 
-SELECT name, address FROM web_data_source1
-UNION
+SELECT name, address FROM web_data_source1 
+UNION 
 SELECT name, address FROM web_data_source2;
+
+
 
 ⸻
 
@@ -189,16 +223,22 @@ SELECT name, address FROM web_data_source2;
 
 CREATE INDEX idx_orders_customer ON orders (customer_id);
 
+
+
 ⸻
 
 🛠 SQL Interview Practice Checklist
 
 ✅ Aggregation Queries (SUM, COUNT, AVG, MIN, MAX, GROUP BY)
 ✅ Window Functions (Running Sums, Moving Averages, Ranking, Lag/Lead)
-✅ Joins (Inner, Outer, Self, Cross Joins)
+✅ Joins (INNER, OUTER, SELF, CROSS Joins)
 ✅ Performance Tuning (Indexes, Query Execution Plans, EXISTS vs. IN)
 ✅ Recursive Queries (Recursive CTEs, Hierarchical Data Processing)
 ✅ Pivoting Data (CASE WHEN, PIVOT(), UNPIVOT())
 ✅ Web Scraping & Large-Scale Data Aggregation (JSON, API Data, UNION, ETL Processes)
 ✅ Handling NULLs (COALESCE, NULLIF, IS NULL)
 ✅ Date/Time Manipulation (DATE_TRUNC, EXTRACT, DATEDIFF)
+
+📌 Source:
+thedataplaybook/content/posts/ultimate-sql-interview-cheat-sheet.md
+
