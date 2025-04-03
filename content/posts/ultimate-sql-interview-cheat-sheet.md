@@ -225,14 +225,14 @@ CREATE INDEX idx_orders_customer ON orders (customer_id);
 
 ⸻
 
-🛠 SQL Interview Practice Checklist
+### 🛠 SQL Interview Practice Checklist
 
-✅ Aggregation Queries (SUM, COUNT, AVG, MIN, MAX, GROUP BY)
-✅ Window Functions (Running Sums, Moving Averages, Ranking, LAG/LEAD)
-✅ Joins (INNER, OUTER, SELF, CROSS Joins)
-✅ Performance Tuning (INDEXES, Query Execution Plans, EXISTS vs. IN)
-✅ Recursive Queries (Recursive CTEs, Hierarchical Data Processing)
-✅ Pivoting Data (CASE WHEN, PIVOT(), UNPIVOT())
-✅ Web Scraping & Large-Scale Data Aggregation (JSON, API Data, UNION, ETL Processes)
-✅ Handling NULLs (COALESCE, NULLIF, IS NULL)
-✅ Date/Time Manipulation (DATE_TRUNC, EXTRACT, DATEDIFF)
+- ✅ Aggregation Queries (`SUM`, `COUNT`, `AVG`, `MIN`, `MAX`, `GROUP BY`)
+- ✅ Window Functions (Running Sums, Moving Averages, Ranking, `LAG`/`LEAD`)
+- ✅ Joins (`INNER`, `OUTER`, `SELF`, `CROSS` Joins)
+- ✅ Performance Tuning (`INDEXES`, Query Execution Plans, `EXISTS` vs. `IN`)
+- ✅ Recursive Queries (Recursive `CTEs`, Hierarchical Data Processing)
+- ✅ Pivoting Data (`CASE WHEN`, `PIVOT()`, `UNPIVOT()`)
+- ✅ Web Scraping & Large-Scale Data Aggregation (`JSON`, API Data, `UNION`, ETL Processes)
+- ✅ Handling NULLs (`COALESCE`, `NULLIF`, `IS NULL`)
+- ✅ Date/Time Manipulation (`DATE_TRUNC`, `EXTRACT`, `DATEDIFF`)
