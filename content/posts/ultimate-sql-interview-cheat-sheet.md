@@ -184,6 +184,33 @@ SELECT * FROM employee_hierarchy;
 * `PIVOT()` (if supported)
 * `UNPIVOT()` for reversing pivot tables
 
+**Example**: Pivot sales data by region.
+
+🔹 Before (Raw Table)
+
+| region | total_amount |
+|--------|--------------|
+| North  | 5000         |
+| South  | 3000         |
+| East   | 7000         |
+| West   | 4000         |
+| North  | 2000         |
+| South  | 1500         |
+
+```sql
+SELECT 
+  SUM(CASE WHEN region = 'North' THEN total_amount END) AS north_sales,
+  SUM(CASE WHEN region = 'South' THEN total_amount END) AS south_sales,
+  SUM(CASE WHEN region = 'East' THEN total_amount END) AS east_sales,
+  SUM(CASE WHEN region = 'West' THEN total_amount END) AS west_sales
+FROM orders;
+```
+
+🔹 After (Simulated Pivoted Table with CASE WHEN)
+| north_sales | south_sales | east_sales | west_sales |
+|-------------|-------------|------------|------------|
+| 7000        | 4500        | 7000       | 4000       |
+
 **Example**: Pivot data so that each region is a row and each product becomes a column
 
 🔹 **Before (Raw Table)**
