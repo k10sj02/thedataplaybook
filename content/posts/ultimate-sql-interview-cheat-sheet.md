@@ -6,7 +6,7 @@ tags: ["SQL"]
 categories: ["data science"]
 ---
 
-In today's data-driven landscape, mastering advanced SQL techniques isn't just valuable for day-to-day analysis—it's essential for showcasing your expertise during live-coding interviews where you'll need to efficiently manipulate complex datasets under pressure.
+I’ll be skipping past the standard SQL techniques, assuming we’re all familiar with the basics because in today’s data-driven world, mastering advanced SQL isn’t just useful for day-to-day analysis, it’s crucial for standing out in live-coding interviews, where you’re expected to navigate and manipulate complex datasets quickly and confidently.
 
 ## 1️⃣ Running Totals & Cumulative Sums
 
