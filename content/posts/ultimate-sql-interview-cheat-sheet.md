@@ -9,7 +9,7 @@ categories: ["data science"]
 I’ll be skipping past the standard SQL techniques, assuming we’re all familiar with the basics because in today’s data-driven world, mastering advanced SQL isn’t just useful for day-to-day analysis, it’s crucial for standing out in live-coding interviews, where you’re expected to navigate and manipulate complex datasets quickly and confidently.
 
 
-## 9️⃣ GROUP BY vs. DISTINCT vs. Window Functions
+## 1️⃣ GROUP BY vs. DISTINCT vs. Window Functions
 
 | Feature | GROUP BY | DISTINCT | Window Functions |
 |---------|----------|----------|-----------------|
@@ -25,7 +25,7 @@ GROUP BY region;
 
 ---
 
-## 7️⃣ Joins (Inner, Left, Right, Full, Self Joins, Cross Joins)
+## 2️⃣ Joins (Inner, Left, Right, Full, Self Joins, Cross Joins)
 
 ✅ **Use Case**: Combine data from multiple tables efficiently.
 
@@ -37,7 +37,7 @@ LEFT JOIN orders ON customers.customer_id = orders.customer_id;
 ```
 ---
 
-## 5️⃣ CTEs (Common Table Expressions) & Subqueries
+## 3️⃣ CTEs (Common Table Expressions) & Subqueries
 
 ✅ CTEs (`WITH cte AS (…)`) → Make queries more readable  
 ✅ Subqueries → Nested queries within SELECT, FROM, or WHERE
@@ -63,7 +63,7 @@ WHERE total_amount > (SELECT AVG(total_amount) FROM orders);
 
 ---
 
-## 8️⃣ EXISTS vs. IN vs. JOIN (Performance Considerations)
+## 4️⃣ EXISTS vs. IN vs. JOIN (Performance Considerations)
 
 ✅ **Key Functions**:
 * `EXISTS` → Stops at first match (efficient for large datasets)
@@ -83,7 +83,7 @@ WHERE EXISTS (
 
 ---
 
-## 1️⃣ Running Totals & Cumulative Sums
+## 5️⃣ Running Totals & Cumulative Sums
 
 ✅ **Key Function**: `SUM() OVER (ORDER BY column)`  
 ✅ **Use Case**: Running totals of revenue, sales, or cumulative counts.
@@ -97,7 +97,7 @@ FROM orders;
 
 ---
 
-## 2️⃣ Moving Averages (Rolling Window Aggregates)
+## 6️⃣ Moving Averages (Rolling Window Aggregates)
 
 ✅ **Key Function**: `AVG() OVER (ORDER BY column ROWS BETWEEN N PRECEDING AND CURRENT ROW)`
 
@@ -110,7 +110,7 @@ FROM orders;
 
 ---
 
-## 4️⃣ Date & Time Manipulation
+## 7️⃣ Date & Time Manipulation
 
 ✅ **Key Functions**:
 * `DATE_TRUNC()` → Truncate date to year, month, day, etc.
@@ -133,7 +133,7 @@ WHERE order_date >= CURRENT_DATE - INTERVAL '7 days';
 
 ---
 
-## 3️⃣ Handling NULLs
+## 8️⃣ Handling NULLs
 
 ✅ **Key Functions**:
 * `COALESCE(column, default_value)` → Replace NULL with a default value
@@ -154,7 +154,7 @@ FROM sales;
 
 ---
 
-## 6️⃣ Recursive CTEs (Hierarchical Data)
+## 9️⃣ Recursive CTEs (Hierarchical Data)
 
 ✅ **Key Function**: Recursive WITH  
 ✅ **Use Case**: Hierarchical relationships (e.g., org charts, folder structures).
@@ -194,7 +194,7 @@ FROM orders;
 
 ---
 
-## 1️⃣2️⃣ Performance Optimization (Indexing, Query Execution Plans)
+## 1️⃣1️⃣ Performance Optimization (Indexing, Query Execution Plans)
 
 ✅ **Key Concepts**:
 * Use indexes (`CREATE INDEX`) to speed up queries.
@@ -209,7 +209,7 @@ CREATE INDEX idx_orders_customer ON orders (customer_id);
 
 ---
 
-## 1️⃣1️⃣ Web Scraping & Large-Scale Data Aggregation
+## 1️⃣2️⃣ Web Scraping & Large-Scale Data Aggregation
 
 ✅ **Key Techniques**:
 * Extracting data from APIs (JSON functions in SQL)
@@ -230,9 +230,9 @@ FROM web_data_source2;
 - ✅ Aggregation Queries (`SUM`, `COUNT`, `AVG`, `MIN`, `MAX`, `GROUP BY`)
 - ✅ Window Functions (Running Sums, Moving Averages, Ranking, `LAG`/`LEAD`)
 - ✅ Joins (`INNER`, `OUTER`, `SELF`, `CROSS` Joins)
-- ✅ Performance Tuning (`INDEXES`, Query Execution Plans, `EXISTS` vs. `IN`)
+- ✅ Date/Time Manipulation (`DATE_TRUNC`, `EXTRACT`, `DATEDIFF`)
+- ✅ Handling NULLs (`COALESCE`, `NULLIF`, `IS NULL`)
 - ✅ Recursive Queries (Recursive `CTEs`, Hierarchical Data Processing)
 - ✅ Pivoting Data (`CASE WHEN`, `PIVOT()`, `UNPIVOT()`)
+- ✅ Performance Tuning (`INDEXES`, Query Execution Plans, `EXISTS` vs. `IN`)
 - ✅ Web Scraping & Large-Scale Data Aggregation (`JSON`, API Data, `UNION`, ETL Processes)
-- ✅ Handling NULLs (`COALESCE`, `NULLIF`, `IS NULL`)
-- ✅ Date/Time Manipulation (`DATE_TRUNC`, `EXTRACT`, `DATEDIFF`)
