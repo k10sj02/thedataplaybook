@@ -8,75 +8,33 @@ categories: ["data science"]
 
 I’ll be skipping past the standard SQL techniques, assuming we’re all familiar with the basics because in today’s data-driven world, mastering advanced SQL isn’t just useful for day-to-day analysis, it’s crucial for standing out in live-coding interviews, where you’re expected to navigate and manipulate complex datasets quickly and confidently.
 
-## 1️⃣ Running Totals & Cumulative Sums
 
-✅ **Key Function**: `SUM() OVER (ORDER BY column)`  
-✅ **Use Case**: Running totals of revenue, sales, or cumulative counts.
+## 9️⃣ GROUP BY vs. DISTINCT vs. Window Functions
 
-**Example**: Compute cumulative revenue over time.
+| Feature | GROUP BY | DISTINCT | Window Functions |
+|---------|----------|----------|-----------------|
+| Use Case | Aggregates | Removes duplicates | Ranking, cumulative sums |
+| Performance | Medium | Fast | Can be slow with large data |
+
+**Example**: Count unique customers per region.
 ```sql
-SELECT order_date, total_amount, 
-       SUM(total_amount) OVER (ORDER BY order_date) AS running_total 
-FROM orders;
+SELECT region, COUNT(DISTINCT customer_id) 
+FROM customers 
+GROUP BY region;
 ```
 
 ---
 
-## 2️⃣ Moving Averages (Rolling Window Aggregates)
+## 7️⃣ Joins (Inner, Left, Right, Full, Self Joins, Cross Joins)
 
-✅ **Key Function**: `AVG() OVER (ORDER BY column ROWS BETWEEN N PRECEDING AND CURRENT ROW)`
+✅ **Use Case**: Combine data from multiple tables efficiently.
 
-**Example**: Compute 7-day rolling average of revenue.
+**Example**: Find customer orders and their details.
 ```sql
-SELECT order_date, total_amount, 
-       AVG(total_amount) OVER (ORDER BY order_date ROWS BETWEEN 6 PRECEDING AND CURRENT ROW) AS moving_avg 
-FROM orders;
+SELECT customers.name, orders.order_date, orders.total_amount 
+FROM customers 
+LEFT JOIN orders ON customers.customer_id = orders.customer_id;
 ```
-
----
-
-## 3️⃣ Handling NULLs
-
-✅ **Key Functions**:
-* `COALESCE(column, default_value)` → Replace NULL with a default value
-* `NULLIF(value1, value2)` → Returns NULL if both values are equal
-* `IS NULL / IS NOT NULL` → Filter NULL values
-
-**Example**: Replace missing values with 0.
-```sql
-SELECT customer_id, COALESCE(total_amount, 0) AS total_amount 
-FROM orders;
-```
-
-**Example**: Handle division by zero using NULLIF.
-```sql
-SELECT revenue / NULLIF(orders, 0) 
-FROM sales;
-```
-
----
-
-## 4️⃣ Date & Time Manipulation
-
-✅ **Key Functions**:
-* `DATE_TRUNC()` → Truncate date to year, month, day, etc.
-* `EXTRACT(YEAR FROM date)` → Get year, month, or day from a date
-* `DATEADD(interval, value, date)` → Add/subtract days/months
-* `DATEDIFF(end_date, start_date)` → Difference between dates
-
-**Example**: Find total sales per month.
-```sql
-SELECT DATE_TRUNC('month', order_date) AS month, SUM(total_amount) 
-FROM orders 
-GROUP BY month;
-```
-
-**Example**: Find orders placed in the last 7 days.
-```sql
-SELECT * FROM orders 
-WHERE order_date >= CURRENT_DATE - INTERVAL '7 days';
-```
-
 ---
 
 ## 5️⃣ CTEs (Common Table Expressions) & Subqueries
@@ -105,6 +63,97 @@ WHERE total_amount > (SELECT AVG(total_amount) FROM orders);
 
 ---
 
+## 8️⃣ EXISTS vs. IN vs. JOIN (Performance Considerations)
+
+✅ **Key Functions**:
+* `EXISTS` → Stops at first match (efficient for large datasets)
+* `IN` → Works well for small lists but slower for large datasets
+* `JOIN` → Preferred when retrieving related columns
+
+**Example**: Find customers who have placed at least one order.
+```sql
+SELECT name 
+FROM customers 
+WHERE EXISTS (
+  SELECT 1 
+  FROM orders 
+  WHERE orders.customer_id = customers.customer_id
+);
+```
+
+---
+
+## 1️⃣ Running Totals & Cumulative Sums
+
+✅ **Key Function**: `SUM() OVER (ORDER BY column)`  
+✅ **Use Case**: Running totals of revenue, sales, or cumulative counts.
+
+**Example**: Compute cumulative revenue over time.
+```sql
+SELECT order_date, total_amount, 
+       SUM(total_amount) OVER (ORDER BY order_date) AS running_total 
+FROM orders;
+```
+
+---
+
+## 2️⃣ Moving Averages (Rolling Window Aggregates)
+
+✅ **Key Function**: `AVG() OVER (ORDER BY column ROWS BETWEEN N PRECEDING AND CURRENT ROW)`
+
+**Example**: Compute 7-day rolling average of revenue.
+```sql
+SELECT order_date, total_amount, 
+       AVG(total_amount) OVER (ORDER BY order_date ROWS BETWEEN 6 PRECEDING AND CURRENT ROW) AS moving_avg 
+FROM orders;
+```
+
+---
+
+## 4️⃣ Date & Time Manipulation
+
+✅ **Key Functions**:
+* `DATE_TRUNC()` → Truncate date to year, month, day, etc.
+* `EXTRACT(YEAR FROM date)` → Get year, month, or day from a date
+* `DATEADD(interval, value, date)` → Add/subtract days/months
+* `DATEDIFF(end_date, start_date)` → Difference between dates
+
+**Example**: Find total sales per month.
+```sql
+SELECT DATE_TRUNC('month', order_date) AS month, SUM(total_amount) 
+FROM orders 
+GROUP BY month;
+```
+
+**Example**: Find orders placed in the last 7 days.
+```sql
+SELECT * FROM orders 
+WHERE order_date >= CURRENT_DATE - INTERVAL '7 days';
+```
+
+---
+
+## 3️⃣ Handling NULLs
+
+✅ **Key Functions**:
+* `COALESCE(column, default_value)` → Replace NULL with a default value
+* `NULLIF(value1, value2)` → Returns NULL if both values are equal
+* `IS NULL / IS NOT NULL` → Filter NULL values
+
+**Example**: Replace missing values with 0.
+```sql
+SELECT customer_id, COALESCE(total_amount, 0) AS total_amount 
+FROM orders;
+```
+
+**Example**: Handle division by zero using NULLIF.
+```sql
+SELECT revenue / NULLIF(orders, 0) 
+FROM sales;
+```
+
+---
+
 ## 6️⃣ Recursive CTEs (Hierarchical Data)
 
 ✅ **Key Function**: Recursive WITH  
@@ -128,55 +177,6 @@ SELECT * FROM employee_hierarchy;
 
 ---
 
-## 7️⃣ Joins (Inner, Left, Right, Full, Self Joins, Cross Joins)
-
-✅ **Use Case**: Combine data from multiple tables efficiently.
-
-**Example**: Find customer orders and their details.
-```sql
-SELECT customers.name, orders.order_date, orders.total_amount 
-FROM customers 
-LEFT JOIN orders ON customers.customer_id = orders.customer_id;
-```
-
----
-
-## 8️⃣ EXISTS vs. IN vs. JOIN (Performance Considerations)
-
-✅ **Key Functions**:
-* `EXISTS` → Stops at first match (efficient for large datasets)
-* `IN` → Works well for small lists but slower for large datasets
-* `JOIN` → Preferred when retrieving related columns
-
-**Example**: Find customers who have placed at least one order.
-```sql
-SELECT name 
-FROM customers 
-WHERE EXISTS (
-  SELECT 1 
-  FROM orders 
-  WHERE orders.customer_id = customers.customer_id
-);
-```
-
----
-
-## 9️⃣ GROUP BY vs. DISTINCT vs. Window Functions
-
-| Feature | GROUP BY | DISTINCT | Window Functions |
-|---------|----------|----------|-----------------|
-| Use Case | Aggregates | Removes duplicates | Ranking, cumulative sums |
-| Performance | Medium | Fast | Can be slow with large data |
-
-**Example**: Count unique customers per region.
-```sql
-SELECT region, COUNT(DISTINCT customer_id) 
-FROM customers 
-GROUP BY region;
-```
-
----
-
 ## 🔟 Pivoting & Unpivoting Data (CASE WHEN & PIVOT)
 
 ✅ **Key Functions**:
@@ -190,6 +190,21 @@ SELECT
   SUM(CASE WHEN region = 'North' THEN total_amount END) AS north_sales,
   SUM(CASE WHEN region = 'South' THEN total_amount END) AS south_sales
 FROM orders;
+```
+
+---
+
+## 1️⃣2️⃣ Performance Optimization (Indexing, Query Execution Plans)
+
+✅ **Key Concepts**:
+* Use indexes (`CREATE INDEX`) to speed up queries.
+* Analyze query performance with `EXPLAIN ANALYZE`.
+* Optimize JOIN orders (use smaller tables first).
+* Use `LIMIT` or `TOP` to improve efficiency in large queries.
+
+**Example**: Add an index to speed up searches.
+```sql
+CREATE INDEX idx_orders_customer ON orders (customer_id);
 ```
 
 ---
@@ -209,23 +224,6 @@ UNION
 SELECT name, address 
 FROM web_data_source2;
 ```
-
----
-
-## 1️⃣2️⃣ Performance Optimization (Indexing, Query Execution Plans)
-
-✅ **Key Concepts**:
-* Use indexes (`CREATE INDEX`) to speed up queries.
-* Analyze query performance with `EXPLAIN ANALYZE`.
-* Optimize JOIN orders (use smaller tables first).
-* Use `LIMIT` or `TOP` to improve efficiency in large queries.
-
-**Example**: Add an index to speed up searches.
-```sql
-CREATE INDEX idx_orders_customer ON orders (customer_id);
-```
-
----
 
 ### 🛠 SQL Interview Practice Checklist
 
