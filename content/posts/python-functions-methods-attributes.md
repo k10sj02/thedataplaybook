@@ -1,7 +1,7 @@
 ---
 title: "Differentiating Between Functions, Methods, and Attributes in Python"
 date: 2024-01-15 23:18:35 -0400
-draft: false
+draft: true
 tags: ["python"]
 categories: ["blog", "data science"]
 ---
