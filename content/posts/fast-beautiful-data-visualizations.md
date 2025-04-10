@@ -14,20 +14,22 @@ But visuals matter. A lot. The good news? You don’t have to sacrifice hours to
 
 ## Tip 1: Don’t Reinvent the Wheel — Use a Visual Style Guide
 
-Tinkering with layouts and styles from scratch every time is a huge time-suck. Instead, adopt a consistent visual style that does the heavy lifting for you. My go-tos for inspiration include:
+Tinkering with layouts and styles from scratch every time is a huge time-suck. Instead, adopt a consistent visual style that does the heavy lifting for you. My go-tos for inspiration include news media, blogs, and data influencers like:
 
-- **Cole Knaflic** (*Storytelling with Data*)
-- **Peter Walker** (Carta)
-- Print media like **The Economist**, with their clean, minimalist approach
+- [**Cole Knaflic** (*Storytelling with Data*)](https://www.storytellingwithdata.com/)
+- [**Peter Walker** (Carta)](https://carta.com/author/peter-walker/)
+- Print media like [**The Economist**](https://www.economist.com/topics/graphic-detail), with their clean, minimalist approach
+- [DataWrapper blog](https://www.datawrapper.de/blog/)
 
-Even better? Use existing **style guides**—like the BBC, Urban Institute, or JLL Tableau guides—to align your work with professional visual standards.
+Even better? Use existing **style guides**—like the Economist, BBC, or Urban Institute—to align your work with professional visual standards.
 
 > ✅ **Pro tip:** Let your creativity shine in colors and fonts, but keep the structure consistent.
 
 **Resources:**
 
 - [BBC Tableau Style Guide](https://public.tableau.com/app/profile/bbc.audiences/viz/BBCAudiencesTableauStyleGuide/MoreInfo2)  
-- [Economist Style Guides (Charts & Maps)](https://design-system.economist.com/)  
+- [Economist Visual Style Guide]([https://design-system.economist.com/](https://design-system.economist.com/documents/CHARTstyleguide_20170505.pdf))
+- [Economist Map Style Guide](https://design-system.economist.com/documents/MAPstyleguide_20170505.pdf)
 - [Urban Institute Style Guide](https://urbaninstitute.github.io/graphics-styleguide/#third-party-tools)  
 - [Master List of Style Guides](https://docs.google.com/spreadsheets/d/1F1gm5QLXh3USC8ZFx_M9TXYxmD-X5JLDD0oJATRTuIE/edit#gid=1679646668)
 
@@ -48,7 +50,7 @@ Use [Data-to-Viz](https://www.data-to-viz.com/) as a guide. It’s a fantastic r
 
 ## Tip 3: Curate Your Color Palette Intentionally
 
-Color should guide the eye—not distract. Pick a palette that supports your message and accessibility. I often build from default tool palettes and tweak them based on the story or brand I’m working with.
+Color should guide the eye—not distract. Pick a palette that supports your message and accessibility. I often build from default tool palettes with websites like [FontJoy](https://fontjoy.com/) and [Coolors](https://coolors.co/), tweaking them based on the story or brand I’m working with.
 
 > 🎨 **Bonus:** Build an organizational color palette for long-term consistency.
 
