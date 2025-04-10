@@ -6,7 +6,7 @@ tags: ["tableau", "dashboard", "data visualization"]
 categories: ["blog", "data science"]
 ---
 
-Let’s be real—data visualization can be frustrating, even for power analysts. I often get so buried in the numbers that stepping back to *CoMmUnIcAtE* insights can feel like a chore. It’s like making a delicious meal but skipping the plating; no matter how good it tastes, it won’t impress if it looks like mush.
+Let’s be real—data visualization can be frustrating, even for power analysts. I often get so buried in the numbers that stepping back to *cOmMuNiCaTe* insights can feel like a chore. It’s like making a delicious meal but skipping the plating; no matter how good it tastes, it won’t impress if it looks like mush.
 
 But visuals matter. A lot. The good news? You don’t have to sacrifice hours to create dashboards that are sharp, clear, and beautiful. Here are five go-to tips to level up your visualizations—without burning out. The tips are tailored to Tableau users but can be repurposed for your preferred data visualization tool.
 
