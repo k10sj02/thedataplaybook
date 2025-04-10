@@ -14,7 +14,7 @@ But visuals matter. A lot. The good news? You don’t have to sacrifice hours to
 
 ## Tip 1: Don’t Freestyle — Use a Visual Style Guide
 
-Tinkering with layouts and styles from scratch every 👏🏿 single 👏🏿 time 👏🏿 is a huge time-suck. Instead, adopt a consistent visual style that does the heavy lifting for you. My go-tos for inspiration include news media, blogs, and data influencers like:
+Tinkering with layouts and styles from scratch every 👏 single 👏 time 👏 is a huge time-suck. Instead, adopt a consistent visual style that does the heavy lifting for you. My go-tos for inspiration include news media, blogs, and data influencers like:
 
 - [**Cole Knaflic** (*Storytelling with Data*)](https://www.storytellingwithdata.com/)
 - [**Peter Walker** (Carta)](https://carta.com/author/peter-walker/)
