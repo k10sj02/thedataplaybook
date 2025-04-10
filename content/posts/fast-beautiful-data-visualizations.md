@@ -28,7 +28,7 @@ Even better? Use existing **style guides**—like the Economist, BBC, or Urban I
 **Resources:**
 
 - [BBC Tableau Style Guide](https://public.tableau.com/app/profile/bbc.audiences/viz/BBCAudiencesTableauStyleGuide/MoreInfo2)  
-- [Economist Visual Style Guide]([https://design-system.economist.com/](https://design-system.economist.com/documents/CHARTstyleguide_20170505.pdf)
+- [Economist Visual Style Guide](https://design-system.economist.com/documents/CHARTstyleguide_20170505.pdf)
 - [Economist Map Style Guide](https://design-system.economist.com/documents/MAPstyleguide_20170505.pdf)
 - [Urban Institute Style Guide](https://urbaninstitute.github.io/graphics-styleguide/#third-party-tools)  
 - [Master List of Style Guides](https://docs.google.com/spreadsheets/d/1F1gm5QLXh3USC8ZFx_M9TXYxmD-X5JLDD0oJATRTuIE/edit#gid=1679646668)
