@@ -1,4 +1,10 @@
-# 5 Fast Tips for Better Data Visualizations (Without Starting from Scratch)
+---
+title: "5 Fast Tips for Better Data Visualizations (Without Starting from Scratch)"
+date: 2025-04-09 03:00:35 -0400
+draft: false
+tags: ["tableau", "dashboard", "data visualization"]
+categories: ["blog", "data science"]
+---
 
 Let’s be real—data visualization can be frustrating, even for Tableau power users. I often get so buried in the numbers that stepping back to *communicate* insights can feel like a chore. It’s like cooking a great meal but serving it on a paper plate—no matter how good the food is, it won’t land the same.
 
