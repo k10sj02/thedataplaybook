@@ -6,7 +6,7 @@ tags: ["tableau", "dashboard", "data visualization"]
 categories: ["blog", "data science"]
 ---
 
-Let’s be real—data visualization can be frustrating, even for Tableau power users. I often get so buried in the numbers that stepping back to *communicate* insights can feel like a chore. It’s like making a delicious meal but skipping the plating; no matter how good it tastes, it won’t impress if it looks like mush.
+Let’s be real—data visualization can be frustrating, even for power analysts. I often get so buried in the numbers that stepping back to *CoMmUnIcAtE* insights can feel like a chore. It’s like making a delicious meal but skipping the plating; no matter how good it tastes, it won’t impress if it looks like mush.
 
 But visuals matter. A lot. The good news? You don’t have to sacrifice hours to create dashboards that are sharp, clear, and beautiful. Here are five go-to tips to level up your visualizations—without burning out. The tips are tailored to Tableau users but can be repurposed for your preferred data visualization tool.
 
@@ -14,7 +14,7 @@ But visuals matter. A lot. The good news? You don’t have to sacrifice hours to
 
 ## Tip 1: Don’t Freestyle — Use a Visual Style Guide
 
-Tinkering with layouts and styles from scratch every time is a huge time-suck. Instead, adopt a consistent visual style that does the heavy lifting for you. My go-tos for inspiration include news media, blogs, and data influencers like:
+Tinkering with layouts and styles from scratch every 👏🏿 single 👏🏿 time 👏🏿 is a huge time-suck. Instead, adopt a consistent visual style that does the heavy lifting for you. My go-tos for inspiration include news media, blogs, and data influencers like:
 
 - [**Cole Knaflic** (*Storytelling with Data*)](https://www.storytellingwithdata.com/)
 - [**Peter Walker** (Carta)](https://carta.com/author/peter-walker/)
