@@ -45,16 +45,18 @@ If your goal is analysis, grouping, or time-based modeling, long format is likel
 
 **Wide format:**
 
-ID	Year	Sales_Q1	Sales_Q2	Sales_Q3	Sales_Q4
-1	2023	100	200	300	400
+| ID | Year | Sales_Q1 | Sales_Q2 | Sales_Q3 | Sales_Q4 |
+|----|------|----------|----------|----------|----------|
+| 1  | 2023 |   100    |   200    |   300    |   400    |
 
 **Long format:**
 
-ID	Year	Quarter	Sales
-1	2023	Q1	100
-1	2023	Q2	200
-1	2023	Q3	300
-1	2023	Q4	400
+| ID | Year | Quarter | Sales |
+|----|------|---------|-------|
+| 1  | 2023 |   Q1    |  100  |
+| 1  | 2023 |   Q2    |  200  |
+| 1  | 2023 |   Q3    |  300  |
+| 1  | 2023 |   Q4    |  400  |
 
 ---
 
@@ -72,16 +74,18 @@ If your goal is reporting, easy reading, or quick side-by-side comparisons, wide
 
 **Long format:**
 
-ID	Year	Quarter	Sales
-1	2023	Q1	100
-1	2023	Q2	200
-1	2023	Q3	300
-1	2023	Q4	400
+| ID | Year | Quarter | Sales |
+|----|------|---------|-------|
+| 1  | 2023 |   Q1    |  100  |
+| 1  | 2023 |   Q2    |  200  |
+| 1  | 2023 |   Q3    |  300  |
+| 1  | 2023 |   Q4    |  400  |
 
 **Wide format:**
 
-ID	Year	Sales_Q1	Sales_Q2	Sales_Q3	Sales_Q4
-1	2023	100	200	300	400
+| ID | Year | Sales_Q1 | Sales_Q2 | Sales_Q3 | Sales_Q4 |
+|----|------|----------|----------|----------|----------|
+| 1  | 2023 |   100    |   200    |   300    |   400    |
 
 ---
 
