@@ -1,4 +1,10 @@
-# 📐 Long vs. Wide Format: Which Should You Use?
+---
+title: "📐 Long vs. Wide Format: Which Should You Use?"
+date: 2022-05-01 12:18:35 -0400
+draft: false
+tags: ["python", "r", "excel"]
+categories: ["blog", "data science", "data analytics"]
+---
 
 Choosing between **long** and **wide** data formats can make or break your workflow—especially when it comes to analysis, visualization, or preparing reports. This guide will help you figure out the best structure for your dataset based on your goals and tools.
 
