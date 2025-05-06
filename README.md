@@ -46,20 +46,17 @@ This allows individuals to reuse and modify the material as long as:
 
 ---
 
-## Favicon
-
-This site’s favicon was generated using the Twemoji graphic from Twitter:
-
-* **Graphic Title:** [📈 1f4c8.svg](https://github.com/twitter/twemoji/blob/master/assets/svg/1f4c8.svg)
-* **Graphic Author:** Copyright 2020 Twitter, Inc. and other contributors
-* **Source:** [Twemoji GitHub Repository](https://github.com/twitter/twemoji)
-* **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
-
----
-
 ## Theme
 
 The theme used for this blog is [PaperMod](https://github.com/adityatelange/hugo-PaperMod), which is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+---
+
+### Credits
+
+The Tableau embedding shortcode was adapted from [Brewing Cats](https://brewingcats.com/posts/projects/software/tableauparser/), who documented a method for embedding Tableau Public visualizations in Hugo sites.
+
+Icons are provided by [Font Awesome](https://fontawesome.com/) and used under their [Free license](https://fontawesome.com/license/free).
 
 ---
 

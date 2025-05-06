@@ -1,7 +1,17 @@
-{{/* Featured on: */}}
-{{/* https://brewingcats.com/posts/projects/software/tableauparser/ */}}
-{{/* https://brewingcats.com/es/posts/projects/software/tableauparser/ */}}
-{{/* tableau "viz_id" "view_pre" "view_id" "view_name" */}}
+{{/*
+  Tableau Embed Shortcode
+  Adapted from:
+    https://brewingcats.com/posts/projects/software/tableauparser/
+    https://brewingcats.com/es/posts/projects/software/tableauparser/
+  Original embed method from Tableau Public.
+
+  Usage:
+  {{< tableau-embed "divId" "folder" "viz_id" "view_name" >}}
+
+  Example:
+  {{< tableau-embed "tableauViz1" "YourFolderName" "YourVizID" "YourViewName" >}}
+*/}}
+
 <div class='tableauPlaceholder' id='{{.Get 0 }}' style='position: relative'>
   <noscript>
     <a href='#'>
