@@ -1,7 +1,7 @@
+````markdown
 # Stann-Omar Jones
 
-[![github pages](https://github.com/devmedeiros/devmedeiros.github.io/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/devmedeiros/devmedeiros.github.io/actions/workflows/gh-pages.yml) [![License](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-blue)](#license) [![Website devmedeiros.com](https://img.shields.io/website-up-down-green-red/http/devmedeiros.com.svg)](http://devmedeiros.com/)
-
+[![github pages](https://github.com/stannomarjones/thedataplaybook/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/stannomarjones/thedataplaybook/actions/workflows/gh-pages.yml) [![License](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-blue)](https://creativecommons.org/licenses/by-nc-sa/4.0/) [![Website Status](https://img.shields.io/website-up-down-green-red/https/stannomarjones.com.svg)](https://stannomarjones.com)
 
 ## About
 
@@ -9,7 +9,7 @@ A blog for Data Science maintained by Stann-Omar Jones. Detailed description in 
 
 ## Viewing the Site
 
-This website is hosted at https://stannomarjones.com.
+This website is hosted at [https://stannomarjones.com](https://stannomarjones.com).
 
 ## License
 
@@ -36,29 +36,31 @@ PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS 
 FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR 
 OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
 DEALINGS IN THE SOFTWARE.
-```
+````
 
 The blog posts and projects are licensed under [Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+This allows individuals to reuse and modify the material as long as:
 
-Hence, any individual or group of individuals can reuse and modify the material as long as:
+* The purpose is non-commercial.
+* Credit is given to the author (Stann-Omar Jones) with a link to the original content.
+* The new material is distributed under the same license.
 
-- The purpose is non-commercial.
-
-- Credit is given to the author by mentioning their name (Stann-Omar Jones) and linking to the original content.
-
-- The new material must be distributed under the same license.
+---
 
 ## Favicon
 
-This site favicon was generated using the following graphics from Twitter Twemoji:
+This site’s favicon was generated using the Twemoji graphic from Twitter:
 
-- Graphics Title: 1f4c8.svg
-- Graphics Author: Copyright 2020 Twitter, Inc and other contributors (https://github.com/twitter/twemoji)
-- Graphics Source: https://github.com/twitter/twemoji/blob/master/assets/svg/1f4ca.svg
-- Graphics License: CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+* **Graphic Title:** [📈 1f4c8.svg](https://github.com/twitter/twemoji/blob/master/assets/svg/1f4c8.svg)
+* **Graphic Author:** Copyright 2020 Twitter, Inc. and other contributors
+* **Source:** [Twemoji GitHub Repository](https://github.com/twitter/twemoji)
+* **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
+---
 
-Here's a short section you can add to your `README.md` under a “Development” or “Setup” heading:
+## Theme
+
+The theme used for this blog is [PaperMod](https://github.com/adityatelange/hugo-PaperMod), which is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ---
 
@@ -66,3 +68,25 @@ Here's a short section you can add to your `README.md` under a “Development”
 
 For detailed instructions on local development, building, previewing drafts, and cleaning builds, see [`devnotes.md`](./devnotes.md).
 This file documents the custom Hugo + npm workflow used in this project.
+
+---
+
+### Social Links
+
+You can find me on:
+
+* [GitHub](https://github.com/k10sj02)
+* [LinkedIn](https://www.linkedin.com/in/stannomarjones)
+* [Tableau](https://public.tableau.com/app/profile/stann6239/vizzes)
+
+---
+
+### Blog
+
+A collection of posts on data science, data analysis, and personal projects.
+
+---
+
+### License and Copyright Information
+
+All content on this site is the work of Stann-Omar Jones unless otherwise noted. All code is licensed under the [MIT License](https://opensource.org/licenses/MIT), while blog posts are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
