@@ -1,1 +1,12 @@
-<img src="{{ .Get "src" }}" alt="{{ .Get "alt" | default "round image" }}" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;" />
+<!--
+<style>
+    img.profile{
+        float: right;
+        margin: 10px;
+        border-radius: 50%;
+    }
+</style>
+-->
+
+
+    <img src="{{ index .Params 0 }}" alt="{{ index .Params 1 }}" height="100%" style="border-radius: 50%; float: right;width: 100px; height: 100px;"/>
