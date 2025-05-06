@@ -7,7 +7,7 @@ categories: ["blog", "data visualization"]
 ---
 
 
-{{< tableau "viz1708816279420" "Ki" "Kings-County-Housing-Sales" "HousingSalesDash" >}}
+{{< tableau-embed "viz1708816279420" "Ki" "Kings-County-Housing-Sales" "HousingSalesDash" >}}
 
 ## King County, WA Housing Insights
 
