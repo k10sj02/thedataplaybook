@@ -13,4 +13,8 @@
 -->
 
 
-    <img src="{{ index .Params 0 }}" alt="{{ index .Params 1 }}" height="100%" style="border-radius: 50%; float: right;width: 100px; height: 100px;"/>
+{{ if lt (len .Params) 2 }}
+<p style="color:red;">⚠️ round-image shortcode expects 2 parameters: image URL and alt text.</p>
+{{ else }}
+<img src="{{ index .Params 0 }}" alt="{{ index .Params 1 }}" style="border-radius: 50%; float: right; width: 100px; height: 100px;" />
+{{ end }}
