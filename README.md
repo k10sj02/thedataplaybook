@@ -1,4 +1,3 @@
-````markdown
 # Stann-Omar Jones
 
 [![github pages](https://github.com/stannomarjones/thedataplaybook/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/stannomarjones/thedataplaybook/actions/workflows/gh-pages.yml) [![License](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-blue)](https://creativecommons.org/licenses/by-nc-sa/4.0/) [![Website Status](https://img.shields.io/website-up-down-green-red/https/stannomarjones.com.svg)](https://stannomarjones.com)
