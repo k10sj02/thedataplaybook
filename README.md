@@ -56,3 +56,13 @@ This site favicon was generated using the following graphics from Twitter Twemoj
 - Graphics Author: Copyright 2020 Twitter, Inc and other contributors (https://github.com/twitter/twemoji)
 - Graphics Source: https://github.com/twitter/twemoji/blob/master/assets/svg/1f4ca.svg
 - Graphics License: CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
+
+Here's a short section you can add to your `README.md` under a “Development” or “Setup” heading:
+
+---
+
+### 🛠 Development Notes
+
+For detailed instructions on local development, building, previewing drafts, and cleaning builds, see [`devnotes.md`](./devnotes.md).
+This file documents the custom Hugo + npm workflow used in this project.

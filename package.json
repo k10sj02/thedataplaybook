@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "build": "hugo",
+    "dev": "hugo server",
+    "preview": "hugo server --buildDrafts --buildFuture --disableFastRender",
+    "clean": "rm -rf public"
+  },
   "dependencies": {
     "feather-icons": "^4.29.1"
   }

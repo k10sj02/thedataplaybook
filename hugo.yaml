@@ -68,3 +68,5 @@ menu:
       name: search
       url: /search/
       weight: 50
+
+ignoreLogs: ['warning-goldmark-raw-html']
