@@ -3,7 +3,8 @@
     "build": "hugo",
     "dev": "hugo server",
     "preview": "hugo server --buildDrafts --buildFuture --disableFastRender",
-    "clean": "rm -rf public"
+    "clean": "rm -rf public",
+    "new:draft": "node scripts/new-draft.js"
   },
   "dependencies": {
     "feather-icons": "^4.29.1"

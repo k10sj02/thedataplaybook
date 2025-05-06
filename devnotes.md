@@ -1,4 +1,3 @@
-````markdown
 # Developer Notes – Hugo + NPM Setup
 
 This file documents the custom dev setup for this Hugo project using npm scripts.
@@ -11,7 +10,7 @@ Running:
 
 ```bash
 npm run dev
-````
+```
 
 * Launches a local Hugo server with live reload at: [http://localhost:1313](http://localhost:1313)
 * Watches for content, layout, and config changes
@@ -28,6 +27,7 @@ npm run build
 ```
 
 * Generates the static site into the `public/` folder
+* Runs Hugo in production mode
 * Used when preparing the site for deployment (e.g. GitHub Pages)
 
 ---
@@ -40,8 +40,23 @@ Running:
 npm run preview
 ```
 
-* Includes draft and future-dated posts in the local build
-* Helpful for testing unpublished or scheduled content
+* Starts a local server that includes draft and future-dated posts
+* Disables fast render to ensure all changes are captured
+* Ideal for testing unpublished or scheduled content
+
+---
+
+## 🆕 Create New Draft Post
+
+Running:
+
+```bash
+npm run new:draft -- "post-title-here"
+```
+
+* Creates a new markdown file under `content/posts/` with frontmatter set to `draft: true`
+* Uses the Hugo `new` command to initialize the file
+* Replace `"post-title-here"` with your desired slug (no spaces)
 
 ---
 
@@ -64,11 +79,18 @@ These scripts are defined:
 
 ```json
 "scripts": {
-  "dev": "hugo server",
   "build": "hugo",
-  "preview": "hugo --buildDrafts --buildFuture",
-  "clean": "rm -rf public"
+  "dev": "hugo server",
+  "preview": "hugo server --buildDrafts --buildFuture --disableFastRender",
+  "clean": "rm -rf public",
+  "new:draft": "hugo new content/posts/$npm_config_slug.md"
 }
+```
+
+To use `new:draft`, pass `--slug=your-title`:
+
+```bash
+npm run new:draft --slug="my-new-post"
 ```
 
 ---
@@ -83,4 +105,4 @@ ignoreLogs: ['warning-goldmark-raw-html']
 
 ---
 
-*Last updated: May 2025 by Stann*
+*Last updated: May 6, 2025 by Stann*
