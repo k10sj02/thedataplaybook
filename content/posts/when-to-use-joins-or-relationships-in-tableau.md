@@ -22,7 +22,8 @@ Great question — choosing between **joins** and **relationships** in Tableau c
 Choose **relationships** when:
 
 * You want Tableau to preserve each table’s **level of detail (LOD)**.
-* Your tables are **at different granularities** (e.g., one table is by customer, another is by region or transaction).
+* Your tables are **at different granularities** (e.g., one table is by customer, another is by region or transaction). NOTE: Relationships can still be used at the same level of granularity but joins may be preferable if you may need explicit row-level control or easier calculated fields.
+
 * You want to avoid **data duplication** or **row inflation**.
 * You plan to use **LOD expressions**, **row-level security**, or **complex filters**.
 
@@ -56,7 +57,7 @@ Choose **joins** when:
 | Need to preserve table integrity?                   | ✅ Yes             | 🚫 No     |
 | Want Tableau to manage context at viz time?         | ✅ Yes             | 🚫 No     |
 | Need to create row-level calculated fields pre-viz? | 🚫 No             | ✅ Yes     |
-| Tables are at the same granularity                  | 🚫 No             | ✅ Yes     |
+| Tables are at the same granularity                  | ⚠️ Allowed, but joining is often better           | ✅ Yes     |
 | Worried about duplicate rows/nulls?                 | ✅ Safer           | 🚫 Risky  |
 
 ---

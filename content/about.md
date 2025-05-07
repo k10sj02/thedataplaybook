@@ -17,12 +17,12 @@ My writing aims to be accessible to everyone, regardless of technical background
 
 You can find me at:
 
-{{< icon "linkedin" >}} [stannomarjones](https://www.linkedin.com/in/stannomarjones/)  
-{{< icon "github" >}} [k10sj02](https://github.com/k10sj02)
+{{< linkedin-icon >}} [stannomarjones](https://www.linkedin.com/in/stannomarjones/)  
+{{< github-icon >}} [k10sj02](https://github.com/k10sj02)  
 {{< tableau-icon >}} [tableau](https://public.tableau.com/app/profile/stann6239/vizzes)
 
 ---
 
 ### Disclaimer
 
-This is my personal website. The opinions expressed here are my own and do not reflect the views of my current or previous employers. If you would like to learn about the terms and policies, please visit [this page]({{< ref "terms">}}).
+This is my personal website. The opinions expressed here are my own and do not reflect the views of my current or previous employers. If you would like to learn about the terms and policies, please visit [this page]({{< ref "terms">}}). Some of the content on this site has been created or refined with the assistance of AI tools like ChatGPT. I use them to improve clarity, structure, and accessibility, especially in tutorial-based articles. All content is reviewed and curated with care to ensure accuracy and usefulness.
