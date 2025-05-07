@@ -392,3 +392,30 @@ Combination charts show multiple chart types (e.g., bars and lines) in one view.
 [10]: https://help.tableau.com/current/pro/desktop/en-us/buildexamples_boxplot.htm?utm_source=chatgpt.com "Build a Box Plot - Tableau Help"
 [11]: https://help.tableau.com/current/pro/desktop/en-us/buildexamples_highlight.htm?utm_source=chatgpt.com "Build a Highlight Table or Heat Map - Tableau Help"
 [12]: https://help.tableau.com/current/pro/desktop/en-us/maps_howto_heatmap.htm?utm_source=chatgpt.com "Maps that Show Density or Trends - Tableau Help"
+
+Question posted to Tableau Discord: 
+
+quick q for y’all — how do you predict what your viz will look like before dragging stuff in tableau?
+
+i still feel like i’m guessing a lot when i drop dims/measures into rows/columns or the marks card. sometimes it works, sometimes it’s a mess lol.
+any tips or mental models that help you “see it” before you build it?
+
+Nice question. I sometimes think it’s just a matter of time that your brain instantly knows but I would definitely be thankful if there’s any mental structure tips from the more experienced
+
+From Chris McClellan: 
+
+I think it's the basics .... learn what Rows & Columns do.  Dimensions are a "list of values" (the correct term these days is categorical), Measures are a "bucket of numbers" (the correct term these days is quantitive)
+The Marks card breaks down the aggregation (usually) ... so when you add a dimension to Colour, the sheet is now aggregated by that dimension (as well as whatever is on Rows & Columns) PLUS the dimension values are now used in the colour palette.  But add something to Detail, and it's the same logic .... just not Colour
+the Type dropdown on the Marks card changes how the card works (ie bar, line, pie have different shelves/settings to use)
+practice enough and you will build things faster because a) you know what you're trying to do and b) you know exactly where to put pills to make it happen that way
+
+Check out the following books: 
+1. Big Book of Dashboards
+2. https://data.europa.eu/apps/data-visualisation-guide/grammar-of-graphics-in-practice-tableau
+3. The Grammar of Graphics
+
+From Reddit u/JPlantBee: 
+
+Agree with the others that this comes with time.
+
+Another thing that helps is trying to visualize the shape of your data. Ie if you drag a measure and a dimension, you’ll probably get one row per dimension. Then you can figure out if it is bar chart friendly or not (or other charts). Different chart types require different “shapes” of data (1 dimension 2 measures, 0 dimensions 1 measure, etc). Thinking of how the data will be transformed in tabular format can definitely help with viz planning.
