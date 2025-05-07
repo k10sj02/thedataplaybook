@@ -71,6 +71,22 @@ git submodule add https://github.com/k10sj02/hugo-PaperMod.git themes/PaperMod
   git push origin main
   ```
 
+### Resolving Branch Reference Mismatch (main vs master)
+
+Originally, the submodule pointed to the default master branch. However, this repository uses main as its default branch. To align submodule behavior with the current naming convention:
+	1.	The submodule fork (k10sj02/hugo-PaperMod) was updated to use main as its default branch.
+	2.	The submodule reference in this repository was updated to point to a commit on the main branch.
+	3.	The following commands were used to finalize the update:
+
+```bash
+cd themes/PaperMod
+git checkout main  # switch submodule to main if needed
+cd ../
+git add themes/PaperMod
+git commit -m "Update submodule to point to 'main' branch"
+git push origin main
+```
+
 ### Updating the Submodule (for future changes)
 
 To update the submodule in the future, you can pull the latest changes from the theme repository with the following commands:

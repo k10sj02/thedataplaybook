@@ -1,3 +1,4 @@
 [submodule "themes/PaperMod"]
-	path = themes/PaperMod
-	url = https://github.com/k10sj02/hugo-PaperMod.git
+   path = themes/PaperMod
+   url = https://github.com/k10sj02/hugo-PaperMod.git
+   branch = main  # Ensure this line points to 'main'
