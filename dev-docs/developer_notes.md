@@ -103,6 +103,32 @@ To suppress `Raw HTML omitted` warnings from Hugo, this line was added to `hugo.
 ignoreLogs: ['warning-goldmark-raw-html']
 ```
 
+Here’s a concise note you can add to your dev notes:
+
 ---
 
-*Last updated: May 6, 2025 by Stann*
+### 📝 Working with Unfinished Posts
+
+To keep a post unpublished while it's still in progress, use the `draft: true` flag in the front matter of your Markdown file:
+
+```yaml
+---
+title: "My Post Title"
+date: 2025-05-22
+draft: true
+---
+```
+
+This prevents Hugo from publishing the post when you build or deploy the site.
+✅ Use `--buildDrafts` when running `hugo` locally to preview these draft posts:
+
+```bash
+hugo server --buildDrafts
+```
+
+Once you're ready to publish, just remove or change `draft: true` to `draft: false` or delete the line entirely.
+
+
+---
+
+*Last updated: May 22, 2025 by Stann*
