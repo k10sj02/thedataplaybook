@@ -2,3 +2,4 @@ node_modules/
 public/
 .qodo
 draft-search.code-search
+.history/

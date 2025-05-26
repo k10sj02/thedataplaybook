@@ -56,14 +56,16 @@ Here’s a **text version** of Tableau’s Order of Operations, showing the sequ
 1. Extract Filters         – Applied when you create a data extract; limits data at the source.
 2. Data Source Filters     – Applied to limit the data brought into Tableau from the source.
 3. Context Filters         – Filters that define the dataset context for Top N, Sets, and LODs.
+4. FIXED Level of Detail Expressions - Calculated after context filters but before dimension filters. Not affected by regular filters unless those filters are made part of the context.
 4. Top N / Conditional Filters – Based on ranked values or custom conditions; evaluated after context.
 5. Dimension Filters       – Filters on categorical fields (e.g., Region, Product Category).
-6. Measure Filters         – Filters on aggregated measures (e.g., SUM(Sales) > 1000).
-7. Table Calculation Filters – Filters using calculated fields that depend on table layout.
-8. Data Blending           – Occurs after filters above are applied to the primary data source.
-9. Forecasting / Trend Lines – Added after the data is fully shaped and aggregated.
-10. Reference Lines        – Drawn based on final values in the visualization.
-11. Table Display Filters  – Visual filters (like hiding headers or using filter actions).
+6. INCLUDE / EXCLUDE LOD Expressions - Calculated after dimension filters, because they operate at the view level.
+7. Measure Filters         – Filters on aggregated measures (e.g., SUM(Sales) > 1000).
+8. Table Calculation Filters – Filters using calculated fields that depend on table layout.
+9. Data Blending           – Occurs after filters above are applied to the primary data source.
+10. Forecasting / Trend Lines – Added after the data is fully shaped and aggregated.
+11. Reference Lines        – Drawn based on final values in the visualization.
+12. Table Display Filters  – Visual filters (like hiding headers or using filter actions).
 ```
 
 ### Visual Analogy (Indented for Dependency):
