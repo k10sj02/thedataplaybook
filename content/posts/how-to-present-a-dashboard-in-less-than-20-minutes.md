@@ -53,7 +53,7 @@ This dashboard provides three core metrics that help track and analyze STD trend
 
 2. **STD Rate per 100,000 People**
 
-![Image](https://github.com/user-attachments/assets/9176539e-cf41-45a0-bc2f-a8945fca94e2")
+![Image](https://github.com/user-attachments/assets/9176539e-cf41-45a0-bc2f-a8945fca94e2)
 
    - This standardized rate allows for fair comparisons across different population sizes, helping identify which regions or time periods experience the highest infection rates.
    - It is crucial for understanding trends in disease spread relative to population growth or decline.
