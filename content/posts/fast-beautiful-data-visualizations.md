@@ -44,7 +44,7 @@ Before jumping into Tableau, ask:
 - What do I want the audience to take away?
 - Is my data categorical, time-based, relational, or geographic?
 
-Use [Data-to-Viz](https://www.data-to-viz.com/) as a guide. It’s a fantastic resource for pairing data types with the most effective chart forms.
+Use [Data-to-Viz](https://www.data-to-viz.com/) as a guide. It’s a fantastic resource for pairing data types with the most effective chart forms. You can also check out The [Tableau Viz Cookbook](https://public.tableau.com/app/profile/josh.weyburne/viz/CookBook/VizCookbook), a community-curated collection of step-by-step “recipes” for building stunning visualizations in Tableau.
 
 ---
 
