@@ -5,7 +5,7 @@ theme: PaperMod
 
 enableEmoji: true
 
-googleAnalytics: G-7468M69BVN
+googleAnalytics: "G-7468M69BVN"
 privacy:
   googleAnalytics:
     anonymizeIP: true
