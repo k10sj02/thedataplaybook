@@ -1,10 +1,10 @@
 ---
 title: "Git Commit Message Quick Cheat Sheet"
-date: 2025-13-02 12:18:35 -0400
+date: 2025-02-13 12:18:35 -0400
 draft: false
 tags: ["git", "version control", "commit messages", "developer workflow", "best practices"]
 categories: ["blog", "software development"]
----
+--- 
 
 A practical guide for writing clear, consistent commit messages.
 
