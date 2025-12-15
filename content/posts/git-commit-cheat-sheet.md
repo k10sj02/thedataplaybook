@@ -1,5 +1,5 @@
 ---
-title: "Git Commit Message Quick Cheat Sheet"
+title: "Git Commit Message Quick Cheat Sheet for Data Analysts"
 date: 2025-12-13 12:18:35 -0400
 draft: false
 tags: ["git", "version control", "commit messages", "developer workflow", "best practices"]
@@ -20,7 +20,7 @@ Some teams:
 
 My main takeaway: there aren’t universal rules, but being intentional about how you write commits pays dividends in readability, onboarding, and long-term maintainability.
 
-With that said, here's my practical guide for writing clear, consistent commit messages.
+Because analytics work involves frequent iteration on data logic, metrics, and business assumptions that benefit from clear, descriptive commit history, here's my practical guide for writing clear, consistent commit messages for data analysts/scientists. 
 
 ## Format
 
