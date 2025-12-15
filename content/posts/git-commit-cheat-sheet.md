@@ -6,7 +6,21 @@ tags: ["git", "version control", "commit messages", "developer workflow", "best 
 categories: ["blog", "software development"]
 --- 
 
-A practical guide for writing clear, consistent commit messages.
+## Background 
+
+A small thing I’ve been thinking more about lately: git commit messages.
+
+I put together this commit style guide for myself to reduce friction. I often spend a good minute deciding what I actually want to base a commit on, so I asked a teammate how they approach it. What stood out wasn’t that there’s a single “right way”. It’s that even very experienced engineers optimize commits differently depending on scale.
+
+Some teams:
+• keep commits short and verb-driven
+• are more verbose and use the commit body for context
+• rely on PR descriptions to tell the story
+• prefix commits with modules, JIRA ticket numbers, or features to stay sane in massive codebases
+
+My main takeaway: there aren’t universal rules, but being intentional about how you write commits pays dividends in readability, onboarding, and long-term maintainability.
+
+With that said, here's my practical guide for writing clear, consistent commit messages.
 
 ## Format
 
