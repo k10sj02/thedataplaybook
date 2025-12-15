@@ -12,7 +12,7 @@ A small thing I’ve been thinking more about lately: git commit messages.
 
 I put together this commit style guide for myself to reduce friction. I often spend a good minute deciding what I actually want to base a commit on, so I asked a teammate how they approach it. What stood out wasn’t that there’s a single “right way”. It’s that even very experienced engineers optimize commits differently depending on scale.
 
-Some teams:
+Some teams:  
 • keep commits short and verb-driven  
 • are more verbose and use the commit body for context  
 • rely on PR descriptions to tell the story  
