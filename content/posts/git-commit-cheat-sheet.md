@@ -20,7 +20,7 @@ Some teams:
 
 My main takeaway: there aren’t universal rules, but being intentional about how you write commits pays dividends in readability, onboarding, and long-term maintainability.
 
-Because analytics work involves frequent iteration on data logic, metrics, and business assumptions that benefit from clear, descriptive commit history, here's my practical guide for writing clear, consistent commit messages for data analysts/scientists. 
+Because analytics work involves frequent iteration on data logic, metrics, and business assumptions that benefit from clear, descriptive commit history, here's my practical guide for writing clear, consistent commit messages for data analysts/scientists. The examples are drawn from real fundraising and growth analytics work I've done, reflecting the kinds of iterative data, metric, and reporting changes analysts deal with day to day.
 
 ## Format
 
