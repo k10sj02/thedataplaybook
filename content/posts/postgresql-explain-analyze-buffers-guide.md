@@ -6,8 +6,6 @@ tags: ["PostgreSQL", "SQL", "database optimization", "query performance", "EXPLA
 categories: ["blog", "data science", "database"]
 ---
 
-# How to Interpret EXPLAIN ANALYZE BUFFERS Output in PostgreSQL
-
 As a data analyst on sustainability projects, I optimize PostgreSQL queries to ensure end users get accurate data because in these projects, even a second can make a difference. When optimizing PostgreSQL queries, `EXPLAIN (ANALYZE, BUFFERS)` provides critical performance metrics. This guide explains how to read and interpret the output to identify bottlenecks and measure improvements.
 
 ## Example Query
