@@ -13,20 +13,17 @@ As a data analyst on sustainability projects, I optimize PostgreSQL queries to e
 ```sql
 EXPLAIN (ANALYZE, BUFFERS, FORMAT TEXT)
 SELECT 
-    comp.id,
-    comp.name,
-    COUNT(DISTINCT dev.id) AS device_count,
-    SUM(dev.capacity_metric) AS total_capacity_metric,
-    SUM(dev.capacity_units) AS total_capacity_units
-FROM devices dev
-JOIN locations loc ON dev.location_id = loc.id
-JOIN companies comp ON loc.company_id = comp.id
-WHERE comp.id NOT IN (161, 162, 163, 159, 157, 8, 39, 5, 9, 10, 19, 20, 22, 
-                      57, 58, 89, 71, 55, 37, 38, 90, 59, 2, 40, 43, 65, 66, 
-                      33, 79, 78, 95, 23, 101, 102, 103, 120, 122, 124, 126, 
-                      130, 153, 135, 136, 142, 145, 154, 149, 150, 143, 144)
-    -- Exclude test/internal companies
-GROUP BY comp.id, comp.name;
+    c.id,
+    c.name,
+    COUNT(DISTINCT i.id) AS item_count,
+    SUM(i.metric_value) AS total_metric,
+    SUM(i.unit_value) AS total_units
+FROM items i
+JOIN sites s ON i.site_id = s.id
+JOIN organizations o ON s.organization_id = o.id
+WHERE o.id NOT IN (SELECT id FROM test_organizations)
+    -- Exclude test/demo data
+GROUP BY o.id, o.name;
 ```
 
 This query aggregates device data by company, counting distinct devices and summing capacity metrics while filtering out test/internal company IDs.
@@ -38,25 +35,25 @@ This query aggregates device data by company, counting distinct devices and summ
 Aggregate  (cost=80.48..80.49 rows=1 width=8) (actual time=0.530..0.532 rows=1 loops=1)
   Buffers: shared hit=22
   ->  Hash Join  (cost=70.41..80.05 rows=172 width=8) (actual time=0.395..0.507 rows=110 loops=1)
-        Hash Cond: (loc.company_id = comp.id)
+        Hash Cond: (s.organization_id = o.id)
         Buffers: shared hit=22
         ->  Hash Join  (cost=14.74..23.88 rows=188 width=16) (actual time=0.098..0.185 rows=187 loops=1)
-              Hash Cond: (dev.location_id = loc.id)
+              Hash Cond: (i.site_id = s.id)
               Buffers: shared hit=15
-              ->  Seq Scan on devices dev  (cost=0.00..8.64 rows=188 width=16) (actual time=0.009..0.062 rows=187 loops=1)
+              ->  Seq Scan on items i  (cost=0.00..8.64 rows=188 width=16) (actual time=0.009..0.062 rows=187 loops=1)
                     Filter: ((name)::text !~~ '%test%'::text)
                     Rows Removed by Filter: 24
                     Buffers: shared hit=6
               ->  Hash  (cost=11.55..11.55 rows=255 width=16) (actual time=0.084..0.084 rows=267 loops=1)
                     Buckets: 1024  Batches: 1  Memory Usage: 21kB
                     Buffers: shared hit=9
-                    ->  Seq Scan on locations loc  (cost=0.00..11.55 rows=255 width=16) (actual time=0.003..0.054 rows=267 loops=1)
+                    ->  Seq Scan on sites s  (cost=0.00..11.55 rows=255 width=16) (actual time=0.003..0.054 rows=267 loops=1)
                           Buffers: shared hit=9
         ->  Hash  (cost=49.05..49.05 rows=530 width=8) (actual time=0.293..0.293 rows=542 loops=1)
               Buckets: 1024  Batches: 1  Memory Usage: 30kB
               Buffers: shared hit=7
-              ->  Seq Scan on companies comp  (cost=0.00..49.05 rows=530 width=8) (actual time=0.004..0.237 rows=542 loops=1)
-                    Filter: (id <> ALL ('{161,162,163,...}'::bigint[]))
+              ->  Seq Scan on organizations o  (cost=0.00..49.05 rows=530 width=8) (actual time=0.004..0.237 rows=542 loops=1)
+                    Filter: (id <> ALL ('{1,2,3,4,5,...}'::bigint[]))
                     Rows Removed by Filter: 50
                     Buffers: shared hit=7
 Planning:
