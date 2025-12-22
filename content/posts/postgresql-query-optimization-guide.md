@@ -9,7 +9,7 @@ description: "Learn an iterative workflow for optimizing PostgreSQL queries: bas
 
 # How to Interpret EXPLAIN ANALYZE BUFFERS Output in PostgreSQL
 
-When optimizing PostgreSQL queries, `EXPLAIN (ANALYZE, BUFFERS)` provides critical performance metrics. This guide explains how to read and interpret the output to identify bottlenecks and measure improvements.
+As a data analyst on critical projects, I optimize PostgreSQL queries to ensure end users get accurate data because in these projects, even a second can make a difference for time-sensitive analyses. When optimizing PostgreSQL queries, `EXPLAIN (ANALYZE, BUFFERS)` provides critical performance metrics. This guide explains how to read and interpret the output to identify bottlenecks and measure improvements.
 
 ## The Query Optimization Workflow
 
