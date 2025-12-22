@@ -1,59 +1,81 @@
 ---
-title: "How to Interpret EXPLAIN ANALYZE BUFFERS Output in PostgreSQL"
+title: "PostgreSQL Query Optimization: A Practical Workflow Guide"
 date: 2025-12-21 12:00:00 -0500
 draft: false
-tags: ["PostgreSQL", "SQL", "database optimization", "query performance", "EXPLAIN ANALYZE"]
-categories: ["blog", "data science", "database"]
+tags: ["PostgreSQL", "query optimization", "database performance", "EXPLAIN ANALYZE", "SQL tuning"]
+categories: ["blog", "database", "tutorial"]
+description: "Learn an iterative workflow for optimizing PostgreSQL queries: baseline measurement, bottleneck identification, applying optimization techniques, and performance validation."
 ---
 
-As a data analyst on sustainability projects, I optimize PostgreSQL queries to ensure end users get accurate data because in these projects, even a second can make a difference. When optimizing PostgreSQL queries, `EXPLAIN (ANALYZE, BUFFERS)` provides critical performance metrics. This guide explains how to read and interpret the output to identify bottlenecks and measure improvements.
+# How to Interpret EXPLAIN ANALYZE BUFFERS Output in PostgreSQL
 
-## Example Query
+When optimizing PostgreSQL queries, `EXPLAIN (ANALYZE, BUFFERS)` provides critical performance metrics. This guide explains how to read and interpret the output to identify bottlenecks and measure improvements.
 
-```sql
-EXPLAIN (ANALYZE, BUFFERS, FORMAT TEXT)
-SELECT 
-    c.id,
-    c.name,
-    COUNT(DISTINCT i.id) AS item_count,
-    SUM(i.metric_value) AS total_metric,
-    SUM(i.unit_value) AS total_units
-FROM items i
-JOIN sites s ON i.site_id = s.id
-JOIN organizations o ON s.organization_id = o.id
-WHERE o.id NOT IN (SELECT id FROM test_organizations)
-    -- Exclude test/demo data
-GROUP BY o.id, o.name;
-```
+## The Query Optimization Workflow
 
-This query aggregates device data by company, counting distinct devices and summing capacity metrics while filtering out test/internal company IDs.
+Query optimization is an iterative process. Here's the workflow I follow:
+
+1. **Baseline measurement**: Run `EXPLAIN (ANALYZE, BUFFERS)` on the original query 3-5 times to establish baseline performance
+2. **Identify bottlenecks**: Analyze the output to find slow operations, memory spills, or excessive disk I/O
+3. **Apply optimization techniques**: Implement targeted improvements (see common techniques below)
+4. **Re-measure**: Run `EXPLAIN (ANALYZE, BUFFERS)` again to verify the impact
+5. **Iterate**: Repeat steps 2-4 until the query meets performance requirements
+
+### Common Optimization Techniques
+
+Based on your query plan analysis, consider these approaches:
+
+**Indexing**
+- Add indexes on columns used in `WHERE`, `JOIN`, and `ORDER BY` clauses
+- Use composite indexes for multi-column conditions
+- Consider hash indexes for equality comparisons on large tables
+
+**Query rewriting**
+- Replace `NOT IN` with `LEFT JOIN` and `IS NULL` checks for better performance with large exclusion lists
+- Avoid functions in `WHERE` clauses (e.g., `CONVERT(date_column)`) as they prevent index usage
+- Use `EXISTS` instead of `IN` for subqueries when appropriate
+
+**Resource configuration**
+- Increase `work_mem` if you see "Batches > 1" in hash operations (memory spilling)
+- Adjust `shared_buffers` to improve cache hit rates
+- Update table statistics with `ANALYZE` to help the query planner
+
+**Data structure improvements**
+- Implement table partitioning for very large tables
+- Use appropriate clustering keys for frequently-joined tables
+- Remove unnecessary columns from SELECT when aggregating millions of rows
+
+The key is to make one change at a time and measure its impact with `EXPLAIN ANALYZE BUFFERS` before proceeding to the next optimization.
 
 ## Example Output
 
 ```sql
+-- Source - https://stackoverflow.com/q/79846354
+-- Posted by Oliver S, modified by community. See post 'Timeline' for change history
+-- Retrieved 2025-12-21, License - CC BY-SA 4.0
 -- Table and column names modified for educational purposes
 Aggregate  (cost=80.48..80.49 rows=1 width=8) (actual time=0.530..0.532 rows=1 loops=1)
   Buffers: shared hit=22
   ->  Hash Join  (cost=70.41..80.05 rows=172 width=8) (actual time=0.395..0.507 rows=110 loops=1)
-        Hash Cond: (s.organization_id = o.id)
+        Hash Cond: (loc.company_id = comp.id)
         Buffers: shared hit=22
         ->  Hash Join  (cost=14.74..23.88 rows=188 width=16) (actual time=0.098..0.185 rows=187 loops=1)
-              Hash Cond: (i.site_id = s.id)
+              Hash Cond: (dev.location_id = loc.id)
               Buffers: shared hit=15
-              ->  Seq Scan on items i  (cost=0.00..8.64 rows=188 width=16) (actual time=0.009..0.062 rows=187 loops=1)
+              ->  Seq Scan on devices dev  (cost=0.00..8.64 rows=188 width=16) (actual time=0.009..0.062 rows=187 loops=1)
                     Filter: ((name)::text !~~ '%test%'::text)
                     Rows Removed by Filter: 24
                     Buffers: shared hit=6
               ->  Hash  (cost=11.55..11.55 rows=255 width=16) (actual time=0.084..0.084 rows=267 loops=1)
                     Buckets: 1024  Batches: 1  Memory Usage: 21kB
                     Buffers: shared hit=9
-                    ->  Seq Scan on sites s  (cost=0.00..11.55 rows=255 width=16) (actual time=0.003..0.054 rows=267 loops=1)
+                    ->  Seq Scan on locations loc  (cost=0.00..11.55 rows=255 width=16) (actual time=0.003..0.054 rows=267 loops=1)
                           Buffers: shared hit=9
         ->  Hash  (cost=49.05..49.05 rows=530 width=8) (actual time=0.293..0.293 rows=542 loops=1)
               Buckets: 1024  Batches: 1  Memory Usage: 30kB
               Buffers: shared hit=7
-              ->  Seq Scan on organizations o  (cost=0.00..49.05 rows=530 width=8) (actual time=0.004..0.237 rows=542 loops=1)
-                    Filter: (id <> ALL ('{1,2,3,4,5,...}'::bigint[]))
+              ->  Seq Scan on companies comp  (cost=0.00..49.05 rows=530 width=8) (actual time=0.004..0.237 rows=542 loops=1)
+                    Filter: (id <> ALL ('{161,162,163,...}'::bigint[]))
                     Rows Removed by Filter: 50
                     Buffers: shared hit=7
 Planning:
