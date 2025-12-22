@@ -7,7 +7,7 @@ categories: ["blog", "database", "tutorial"]
 description: "Learn an iterative workflow for optimizing PostgreSQL queries: baseline measurement, bottleneck identification, applying optimization techniques, and performance validation."
 ---
 
-## How to Interpret EXPLAIN ANALYZE BUFFERS Output in PostgreSQL
+# How to Interpret EXPLAIN ANALYZE BUFFERS Output in PostgreSQL
 
 When optimizing PostgreSQL queries, `EXPLAIN (ANALYZE, BUFFERS)` provides critical performance metrics. This guide explains how to read and interpret the output to identify bottlenecks and measure improvements.
 
@@ -34,7 +34,11 @@ Based on your query plan analysis, consider these approaches:
 - Replace `NOT IN` with `LEFT JOIN` and `IS NULL` checks for better performance with large exclusion lists
 - Avoid functions in `WHERE` clauses (e.g., `CONVERT(date_column)`) as they prevent index usage
 - Use `EXISTS` instead of `IN` for subqueries when appropriate
-- Use COUNT(*) instead of COUNT(DISTINCT column) when counting rows with primary keys
+- Use `COUNT(*)` instead of `COUNT(DISTINCT column)` when counting rows with primary keys
+- Remove unnecessary `OUTER JOIN`s—use `INNER JOIN` when you don't need unmatched rows
+- Avoid calculated fields in `JOIN` and `WHERE` clauses (e.g., `WHERE YEAR(date_column) = 2024`)
+- Limit your working data set—filter early and often to reduce rows processed
+- Select only the columns you need rather than using `SELECT *`
 
 **Resource configuration**
 - Increase `work_mem` if you see "Batches > 1" in hash operations (memory spilling)
@@ -51,6 +55,9 @@ The key is to make one change at a time and measure its impact with `EXPLAIN ANA
 ## Example Output
 
 ```sql
+-- Source - https://stackoverflow.com/q/79846354
+-- Posted by Oliver S, modified by community. See post 'Timeline' for change history
+-- Retrieved 2025-12-21, License - CC BY-SA 4.0
 -- Table and column names modified for educational purposes
 Aggregate  (cost=80.48..80.49 rows=1 width=8) (actual time=0.530..0.532 rows=1 loops=1)
   Buffers: shared hit=22
