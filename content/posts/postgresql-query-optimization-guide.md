@@ -4,12 +4,9 @@ date: 2025-12-21 12:00:00 -0500
 draft: false
 tags: ["PostgreSQL", "query optimization", "database performance", "EXPLAIN ANALYZE", "SQL tuning"]
 categories: ["blog", "database", "tutorial"]
-description: "Learn an iterative workflow for optimizing PostgreSQL queries: baseline measurement, bottleneck identification, applying optimization techniques, and performance validation."
 ---
 
-# How to Interpret EXPLAIN ANALYZE BUFFERS Output in PostgreSQL
-
-As a data analyst on critical projects, I optimize PostgreSQL queries to ensure end users get accurate data because in these projects, even a second can make a difference for time-sensitive analyses. When optimizing PostgreSQL queries, `EXPLAIN (ANALYZE, BUFFERS)` provides critical performance metrics. This guide explains how to read and interpret the output to identify bottlenecks and measure improvements.
+As a data analyst on critical projects, I optimize PostgreSQL queries to ensure end users get accurate data, because even a second can make a difference for time-sensitive analyses. Over the past year, I’ve learned a lot about query optimization, but I found resources on this surprisingly scarce when I was actively working on it. Many details were obscure. One tool that proved indispensable is `EXPLAIN (ANALYZE, BUFFERS)`, which provides critical performance metrics. This guide walks through how to read and interpret the output, helping identify bottlenecks and measure improvements effectively.
 
 ## The Query Optimization Workflow
 
