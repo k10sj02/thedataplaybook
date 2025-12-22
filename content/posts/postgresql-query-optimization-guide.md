@@ -10,7 +10,7 @@ categories: ["blog", "database", "tutorial"]
 
 As a data analyst on critical projects, I optimize PostgreSQL queries to ensure end users get accurate data, because even a second can make a difference for time-sensitive analyses. Over the past year, I’ve learned a lot about query optimization, but I found resources on this surprisingly scarce when I was actively working on it. Many details were obscure. 
 
-One tool that proved indispensable is `EXPLAIN (ANALYZE, BUFFERS)`, which provides critical performance metrics. This guide walks through how to read and interpret the output, helping identify bottlenecks and measure improvements effectively.
+One tool that proved indispensable is [`EXPLAIN (ANALYZE, BUFFERS)`](https://www.postgresql.org/docs/current/using-explain.html), which provides critical performance metrics. This guide walks through how to read and interpret the output, helping identify bottlenecks and measure improvements effectively.
 
 ## The Query Optimization Workflow
 
