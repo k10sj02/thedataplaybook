@@ -34,9 +34,6 @@ This query aggregates device data by company, counting distinct devices and summ
 ## Example Output
 
 ```sql
--- Source - https://stackoverflow.com/q/79846354
--- Posted by Oliver S, modified by community. See post 'Timeline' for change history
--- Retrieved 2025-12-21, License - CC BY-SA 4.0
 -- Table and column names modified for educational purposes
 Aggregate  (cost=80.48..80.49 rows=1 width=8) (actual time=0.530..0.532 rows=1 loops=1)
   Buffers: shared hit=22
