@@ -204,4 +204,6 @@ Remember: Focus on the metrics that matter for your specific workload. A query t
 
 > *I’m not an expert in this area, so I welcome corrections and insights from readers or advanced users. When interpreting PostgreSQL’s `EXPLAIN (ANALYZE, BUFFERS)` output, I encountered differing opinions from SQL practitioners: some favored using the summary for total elapsed time, others suggested focusing on top nodes; memory could be reported as the largest hash node usage or roughly summed across nodes; and I/O is best viewed at the top node but may omit triggers. I followed the broadest consensus I could find, acknowledging that exact measurement can be tricky.*
 
+> *While this article focuses on PostgreSQL, please note that the execution plan tooling is not standardized across SQL databases. PostgreSQL’s EXPLAIN ANALYZE is unusually transparent: it executes the query and reports real timings, row counts, memory usage, and I/O at each plan node. However, other systems like MySQL take different approaches and may expose fewer internals. As a result, advice that works well for PostgreSQL plan analysis may not translate directly to other dialects, even when the commands look similar. Always check what your database is actually measuring (and what it isn’t) before drawing performance conclusions.*
+
 
