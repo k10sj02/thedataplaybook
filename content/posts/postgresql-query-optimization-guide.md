@@ -193,12 +193,12 @@ Buffers: shared hit=22 (all cache hits, no disk reads)
 
 ## Quick Reference
 
-| Metric | Location | Good | Bad |
-|--------|----------|------|-----|
-| Execution Time | Bottom line | <10ms | Seconds+ |
-| Memory | Hash/Agg nodes | Fits in work_mem | Batches >1 |
-| Buffers | Per node | shared hit | shared read |
-| Row estimates | vs actual | Within 2x | Off by 10x+ |
+| Metric | Where to Look | Good | Warning / Bad |
+|--------|---------------|------|---------------|
+| Execution Time | Execution Time in summary (bottom of output, includes triggers) | <10 ms for simple queries | Seconds+ for small datasets |
+| Memory | Memory Usage in hash / aggregate nodes; check Batches | Fits in work_mem | Batches >1 (spills to disk) |
+| Buffers / I/O | Top-most node for total; child nodes for detailed view | Mostly shared hit | High shared read or temp read/written (disk I/O) |
+| Row estimates | rows in each node (estimated vs actual) | Within ~2× | Off by 10×+ (may indicate outdated statistics or skewed data) |
 
 Remember: Focus on the metrics that matter for your specific workload. A query that runs once per hour can tolerate higher latency than one executing thousands of times per second.
 
