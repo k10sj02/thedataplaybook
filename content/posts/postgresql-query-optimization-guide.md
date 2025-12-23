@@ -123,22 +123,25 @@ Batches: 1  Memory Usage: 40kB
 - Smaller nodes are usually negligible
 - Watch for "Batches: >1" which indicates memory spilling (performance penalty)
 
+Some analysts sum memory across nodes, but this can give a misleading estimate because the peak usage in different nodes doesn’t necessarily happen at the same time.
+
 ### 3. Buffer Activity (I/O)
 
 Buffers track data access patterns:
 ```
 Buffers: shared hit=22
 ```
+PostgreSQL tracks how queries access data in memory and on disk using buffers. The Buffers: line in EXPLAIN (ANALYZE, BUFFERS) tells you where the data came from and how much I/O occurred.
 
 **Key buffer types:**
-- **shared hit**: Data found in PostgreSQL's shared buffer cache (fast)
-- **shared read**: Data read from disk (slow)
-- **temp read/written**: Temporary files used when work_mem exceeded
+- **shared hit**: The data was already in PostgreSQL’s shared memory cache. This is very fast because the query didn’t need to touch the disk.
+- **shared read**: The data had to be read from disk because it wasn’t in memory. Disk reads are much slower than memory hits.
+- **temp read/written**: PostgreSQL had to create temporary files on disk because the query exceeded work_mem. This is usually a sign of heavy sorting, hashing, or joins that didn’t fit in memory, resulting in slower performance.
 
 **How to interpret:**
 - High "shared hit" with zero "shared read" means all data came from cache (ideal)
 - The top node's buffer count covers the entire query
-- More reads = more disk I/O = slower performance
+- More reads = more disk I/O = slower performance. If shared read or temp read/written counts are high, your query is hitting the disk often. This is a signal that you may need to increase work_mem, optimize indexes, reduce data scanned.
 
 ### 4. Actual Time vs Cost
 
