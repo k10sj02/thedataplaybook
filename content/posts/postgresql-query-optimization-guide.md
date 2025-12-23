@@ -202,6 +202,6 @@ Buffers: shared hit=22 (all cache hits, no disk reads)
 
 Remember: Focus on the metrics that matter for your specific workload. A query that runs once per hour can tolerate higher latency than one executing thousands of times per second.
 
-<small>I’m not an expert in this area, so I welcome corrections and insights from readers or advanced users. When interpreting PostgreSQL’s `EXPLAIN (ANALYZE, BUFFERS)` output, I encountered differing opinions from SQL practitioners: some favored using the summary for total elapsed time, others suggested focusing on top nodes; memory could be reported as the largest hash node usage or roughly summed across nodes; and I/O is best viewed at the top node but may omit triggers. I followed the broadest consensus I could find, acknowledging that exact measurement can be tricky.</small>
+<sup>I’m not an expert in this area, so I welcome corrections and insights from readers or advanced users. When interpreting PostgreSQL’s `EXPLAIN (ANALYZE, BUFFERS)` output, I encountered differing opinions from SQL practitioners: some favored using the summary for total elapsed time, others suggested focusing on top nodes; memory could be reported as the largest hash node usage or roughly summed across nodes; and I/O is best viewed at the top node but may omit triggers. I followed the broadest consensus I could find, acknowledging that exact measurement can be tricky.</sup>
 
 
