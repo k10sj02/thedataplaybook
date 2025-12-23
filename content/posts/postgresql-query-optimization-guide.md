@@ -8,7 +8,7 @@ categories: ["blog", "database", "tutorial"]
 
 ## Background 
 
-As a data analyst on critical projects, I optimize PostgreSQL queries to ensure end users get accurate data, because even a second can make a difference for time-sensitive analyses. Over the past year, I’ve learned a lot about query optimization and performance tunining in SQL, but I found resources on this surprisingly scarce when I was actively working on it. Furthermore, many details were obscure and even eluded more senior colleagues.
+As a data analyst on critical projects, I optimize PostgreSQL queries to ensure end users receive accurate data because even a single second can make a difference in time-sensitive analyses. In resource-constrained environments, cloud computing costs can also limit access to essential tools, slowing decision-making, reducing team transparency, and even threatening a project’s success. That’s why SQL performance tuning matters. Over the past year, I’ve gained substantial experience in query optimization, yet I was surprised by how scarce practical resources were when I was actively tackling these challenges. Many nuances were obscure, and some even eluded more senior colleagues.
 
 One tool that has become indispensable in my tuning toolkit is [`EXPLAIN (ANALYZE, BUFFERS)`](https://www.postgresql.org/docs/current/using-explain.html), which surfaces critical query performance metrics. This guide walks you through identifying common areas for query optimization, reading and interpreting `EXPLAIN (ANALYZE, BUFFERS)` output, and measuring improvements effectively.
 
@@ -141,7 +141,7 @@ PostgreSQL tracks how queries access data in memory and on disk using buffers. T
 **How to interpret:**
 - High "shared hit" with zero "shared read" means all data came from cache (ideal)
 - The top node's buffer count covers the entire query
-- More reads = more disk I/O = slower performance. If shared read or temp read/written counts are high, your query is hitting the disk often. This is a signal that you may need to increase work_mem, optimize indexes, reduce data scanned.
+- More reads = more disk I/O = slower performance. If shared read or temp read/written counts are high, your query is hitting the disk often. This is a signal that you may need to increase work_mem, optimize indexes, or reduce data scanned.
 
 ### 4. Actual Time vs Cost
 
@@ -151,10 +151,11 @@ HashAggregate  (cost=49.84..51.77 rows=193 width=45)
                (actual time=0.493..0.504 rows=45 loops=1)
 ```
 
+The planner is PostgreSQL’s internal optimizer that decides how to run your query. In this example, the planner thought it would output 193 rows, but the query actually produced 45. Large differences here often indicate outdated statistics or non-representative data distribution, which can lead to suboptimal plans. Small differences between estimated cost/rows and actual time/rows mean planner is accurate and the query is likely well-optimized.
+
 - **cost**: Planner's estimate (unitless)
 - **actual time**: Real wall-clock milliseconds (start..end)
 - **rows**: Estimated vs actual row counts
-- Large discrepancies suggest outdated statistics
 
 ## Common Misconceptions
 
