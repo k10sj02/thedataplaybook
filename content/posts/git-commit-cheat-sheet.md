@@ -1,5 +1,5 @@
 ---
-title: "Git Commit Message Quick Cheat Sheet for Data Analysts"
+title: "Why Commit Messages Matter in Analytics (and How to Write Them Well)"
 date: 2025-12-13 12:18:35 -0400
 draft: false
 tags: ["git", "version control", "commit messages", "developer workflow", "best practices"]
