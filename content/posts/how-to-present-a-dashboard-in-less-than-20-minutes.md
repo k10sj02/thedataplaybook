@@ -16,6 +16,13 @@ In most real-world settings, you’ll have about 15–20 minutes. That’s just 
 
 This is a structure I’ve used when presenting dashboards in real-world settings (team reviews, stakeholder check-ins, and decision-focused meetings) where time is limited.
 
+Here’s the example dashboard referenced throughout this walkthrough. As you read, you can refer back to it to see how each step maps to a real presentation.
+
+{{< tableau-embed "viz1743063721041" "ST" "STDRatesintheUS_17418338437490" "STDSummaryDashboard" >}}
+
+---
+
+## 1. Start with Context (4–5 minutes)
 ---
 
 ## 1. Start with Context (4–5 minutes)
