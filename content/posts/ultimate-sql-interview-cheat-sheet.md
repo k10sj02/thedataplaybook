@@ -1,7 +1,7 @@
 ---
 title: "🔥 The Ultimate SQL Interview Cheat Sheet 🔥"
 date: 2024-05-02 12:18:35 -0400
-draft: false
+draft: true
 tags: ["SQL"]
 categories: ["data science"]
 ---
@@ -18,8 +18,8 @@ I’ll be skipping past the standard SQL techniques, assuming we’re all famili
 
 **Example**: Count unique customers per region.
 ```sql
-SELECT region, COUNT(DISTINCT customer_id) 
-FROM customers 
+SELECT region, COUNT(DISTINCT customer_id)
+FROM customers
 GROUP BY region;
 ```
 
@@ -31,33 +31,33 @@ GROUP BY region;
 
 **Example**: Find customer orders and their details.
 ```sql
-SELECT customers.name, orders.order_date, orders.total_amount 
-FROM customers 
+SELECT customers.name, orders.order_date, orders.total_amount
+FROM customers
 LEFT JOIN orders ON customers.customer_id = orders.customer_id;
 ```
 ---
 
 ## 3️⃣ CTEs (Common Table Expressions) & Subqueries
 
-✅ CTEs (`WITH cte AS (…)`) → Make queries more readable  
+✅ CTEs (`WITH cte AS (…)`) → Make queries more readable
 ✅ Subqueries → Nested queries within SELECT, FROM, or WHERE
 
 **Example**: Compute top customers by revenue using a CTE.
 ```sql
 WITH customer_revenue AS (
-  SELECT customer_id, SUM(total_amount) AS total_revenue 
-  FROM orders 
+  SELECT customer_id, SUM(total_amount) AS total_revenue
+  FROM orders
   GROUP BY customer_id
 )
-SELECT * FROM customer_revenue 
-ORDER BY total_revenue DESC 
+SELECT * FROM customer_revenue
+ORDER BY total_revenue DESC
 LIMIT 10;
 ```
 
 **Example**: Find customers who spent more than the average order amount using a subquery.
 ```sql
-SELECT customer_id, total_amount 
-FROM orders 
+SELECT customer_id, total_amount
+FROM orders
 WHERE total_amount > (SELECT AVG(total_amount) FROM orders);
 ```
 
@@ -72,11 +72,11 @@ WHERE total_amount > (SELECT AVG(total_amount) FROM orders);
 
 **Example**: Find customers who have placed at least one order.
 ```sql
-SELECT name 
-FROM customers 
+SELECT name
+FROM customers
 WHERE EXISTS (
-  SELECT 1 
-  FROM orders 
+  SELECT 1
+  FROM orders
   WHERE orders.customer_id = customers.customer_id
 );
 ```
@@ -85,13 +85,13 @@ WHERE EXISTS (
 
 ## 5️⃣ Running Totals & Cumulative Sums
 
-✅ **Key Function**: `SUM() OVER (ORDER BY column)`  
+✅ **Key Function**: `SUM() OVER (ORDER BY column)`
 ✅ **Use Case**: Running totals of revenue, sales, or cumulative counts.
 
 **Example**: Compute cumulative revenue over time.
 ```sql
-SELECT order_date, total_amount, 
-       SUM(total_amount) OVER (ORDER BY order_date) AS running_total 
+SELECT order_date, total_amount,
+       SUM(total_amount) OVER (ORDER BY order_date) AS running_total
 FROM orders;
 ```
 
@@ -103,8 +103,8 @@ FROM orders;
 
 **Example**: Compute 7-day rolling average of revenue.
 ```sql
-SELECT order_date, total_amount, 
-       AVG(total_amount) OVER (ORDER BY order_date ROWS BETWEEN 6 PRECEDING AND CURRENT ROW) AS moving_avg 
+SELECT order_date, total_amount,
+       AVG(total_amount) OVER (ORDER BY order_date ROWS BETWEEN 6 PRECEDING AND CURRENT ROW) AS moving_avg
 FROM orders;
 ```
 
@@ -120,14 +120,14 @@ FROM orders;
 
 **Example**: Find total sales per month.
 ```sql
-SELECT DATE_TRUNC('month', order_date) AS month, SUM(total_amount) 
-FROM orders 
+SELECT DATE_TRUNC('month', order_date) AS month, SUM(total_amount)
+FROM orders
 GROUP BY month;
 ```
 
 **Example**: Find orders placed in the last 7 days.
 ```sql
-SELECT * FROM orders 
+SELECT * FROM orders
 WHERE order_date >= CURRENT_DATE - INTERVAL '7 days';
 ```
 
@@ -142,13 +142,13 @@ WHERE order_date >= CURRENT_DATE - INTERVAL '7 days';
 
 **Example**: Replace missing values with 0.
 ```sql
-SELECT customer_id, COALESCE(total_amount, 0) AS total_amount 
+SELECT customer_id, COALESCE(total_amount, 0) AS total_amount
 FROM orders;
 ```
 
 **Example**: Handle division by zero using NULLIF.
 ```sql
-SELECT revenue / NULLIF(orders, 0) 
+SELECT revenue / NULLIF(orders, 0)
 FROM sales;
 ```
 
@@ -156,20 +156,20 @@ FROM sales;
 
 ## 9️⃣ Recursive CTEs (Hierarchical Data)
 
-✅ **Key Function**: Recursive WITH  
+✅ **Key Function**: Recursive WITH
 ✅ **Use Case**: Hierarchical relationships (e.g., org charts, folder structures).
 
 **Example**: Find all employees reporting to a specific manager.
 ```sql
 WITH RECURSIVE employee_hierarchy AS (
-  SELECT employee_id, manager_id, 1 AS depth 
-  FROM employees 
+  SELECT employee_id, manager_id, 1 AS depth
+  FROM employees
   WHERE manager_id IS NULL -- Start with the CEO
-  
+
   UNION ALL
-  
-  SELECT e.employee_id, e.manager_id, h.depth + 1 
-  FROM employees e 
+
+  SELECT e.employee_id, e.manager_id, h.depth + 1
+  FROM employees e
   JOIN employee_hierarchy h ON e.manager_id = h.employee_id
 )
 SELECT * FROM employee_hierarchy;
@@ -198,7 +198,7 @@ SELECT * FROM employee_hierarchy;
 | South  | 1500         |
 
 ```sql
-SELECT 
+SELECT
   SUM(CASE WHEN region = 'North' THEN total_amount END) AS north_sales,
   SUM(CASE WHEN region = 'South' THEN total_amount END) AS south_sales,
   SUM(CASE WHEN region = 'East' THEN total_amount END) AS east_sales,
@@ -223,7 +223,7 @@ FROM orders;
 | West   | Phone   | 1300       |
 
 ```sql
-SELECT 
+SELECT
     Region,
     ISNULL([Laptop], 0) AS Laptop,
     ISNULL([Phone], 0) AS Phone
@@ -269,10 +269,10 @@ CREATE INDEX idx_orders_customer ON orders (customer_id);
 
 **Example**: Aggregating data from multiple sources into a single table.
 ```sql
-SELECT name, address 
-FROM web_data_source1 
-UNION 
-SELECT name, address 
+SELECT name, address
+FROM web_data_source1
+UNION
+SELECT name, address
 FROM web_data_source2;
 ```
 
