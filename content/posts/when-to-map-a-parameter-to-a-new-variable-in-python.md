@@ -1,7 +1,7 @@
 ---
 title: "When Should You Map a Parameter to a New Variable in Python?"
 date: 2024-01-02 12:18:35 -0400
-draft: false
+draft: true
 tags: ["python"]
 categories: ["blog", "data science"]
 ---
@@ -89,7 +89,7 @@ If a function can accept multiple input types, assigning the parameter to a new 
 
 ```python
 def ensure_list(item):
-    result = item if isinstance(item, list) else [item]  
+    result = item if isinstance(item, list) else [item]
     return result
 
 print(ensure_list("hello"))  # ["hello"]
