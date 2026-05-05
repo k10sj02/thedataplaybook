@@ -1,7 +1,7 @@
 ---
 title: "📐 Long vs. Wide Format: Which Should You Use?"
 date: 2022-05-01 12:18:35 -0400
-draft: false
+draft: true
 tags: ["python", "r", "excel"]
 categories: ["blog", "data science", "data analytics"]
 ---
@@ -25,8 +25,8 @@ Before reshaping your data, ask yourself:
 - **Wide Format**: One row per subject, with **columns for each repeated measure**.
 - **Long Format**: One row per observation, with **columns for identifier, variable, and value**.
 
-> 📌 *Definitions:*  
-> - A **subject** is the thing being measured (e.g., a person, region, or product).  
+> 📌 *Definitions:*
+> - A **subject** is the thing being measured (e.g., a person, region, or product).
 > - An **observation** is a single measurement (e.g., Q1 sales, 2023 temperature).
 
 ---
