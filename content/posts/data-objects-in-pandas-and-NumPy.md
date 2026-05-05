@@ -1,18 +1,18 @@
 ---
 title: "Data Structures/Objects in Python: An Overview"
 date: 2024-02-01 23:18:35 -0400
-draft: false
+draft: true
 tags: ["python", "pandas", "NumPy"]
 categories: ["blog", "data science", "politics"]
 ---
 
-As a Data Scientist at the ShapeUp Project, I’ve been working on data analysis projects at Shape Up The Vote Data Project that activate barbershops and salons as voter engagement hubs in 13 states with 5,500 participating shops by 2024. 
+As a Data Scientist at the ShapeUp Project, I’ve been working on data analysis projects at Shape Up The Vote Data Project that activate barbershops and salons as voter engagement hubs in 13 states with 5,500 participating shops by 2024.
 
 We use relational organizing principles and remote communication through text and phone banking. My role involves collecting, cleaning, and enriching data on potential participants to identify the best shops to contact.
 
 In this process, I’ve had the chance to thoroughly explore the various data structures and objects provided by pandas, a powerful library for data manipulation and analysis, and NumPy, in Python. Here’s a quick overview of the primary data structures you’ll encounter in pandas and NumPy:
 
-## Pandas 
+## Pandas
 
 ### 1. Series
 **Description**: A one-dimensional labeled array capable of holding data of any type (integers, strings, floating point numbers, Python objects, etc.).
