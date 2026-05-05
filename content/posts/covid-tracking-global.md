@@ -1,12 +1,12 @@
 ---
 title: "Global COVID Tracking Dashboard"
 date: 2024-04-02T10:44:25-05:00
-draft: false
+draft: true
 tags: ["tableau", "dashboard", "public health"]
 categories: ["blog", "data visualization"]
 ---
 
-### Context 
+### Context
 From 2020 to 2021, I volunteered at the COVID Tracking Project, where our efforts significantly enhanced the accuracy of data collection in the USA. By auditing, compiling, and analyzing sub-national, daily data sources, we delivered accurate, real-time insights to government officials. Our team built over 50 collaborative datasets and corrected inconsistencies in more than 40,000 data points, informing life-saving national testing and immunization strategies to combat COVID-19.
 
 ### Dashboard
