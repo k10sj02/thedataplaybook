@@ -23,9 +23,6 @@ Here’s the example dashboard referenced throughout this walkthrough. As you re
 ---
 
 ## 1. Start with Context (4–5 minutes)
----
-
-## 1. Start with Context (4–5 minutes)
 
 Before touching the dashboard, set the stage.
 
